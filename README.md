@@ -56,8 +56,8 @@
 ## DONE ##
 
 ## ADMIN DEFAUL USER
-> **url:{host}/admin/login**
+> **url: {host}/admin/login**
 
-> **email:admin@example.com**
+> **email: admin@example.com**
 
-> **password:admin123**
+> **password: admin123**
