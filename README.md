@@ -56,6 +56,6 @@
 ## DONE ##
 
 ## ADMIN DEFAUL USER
-**url:{host}/dmin/login**
-**email:admin@example.com**
-**password:admin123**
+> **url:{host}/dmin/login**
+> **email:admin@example.com**
+> **password:admin123**
