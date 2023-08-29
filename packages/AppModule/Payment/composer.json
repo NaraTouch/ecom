@@ -1,5 +1,5 @@
 {
-    "name": "bagisto/laravel-payment",
+    "name": "module/laravel-payment",
     "license": "MIT",
     "authors": [
         {

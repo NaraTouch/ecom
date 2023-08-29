@@ -1,5 +1,5 @@
 {
-    "name": "bagisto/laravel-tax",
+    "name": "module/laravel-tax",
     "license": "MIT",
     "description" : "Tax package for store front and customers",
     "authors": [

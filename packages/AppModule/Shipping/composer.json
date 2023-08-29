@@ -1,5 +1,5 @@
 {
-    "name": "bagisto/laravel-shipping",
+    "name": "module/laravel-shipping",
     "description": "Shipping Package for Shipping Method",
     "license": "MIT",
     "authors": [

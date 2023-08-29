@@ -1,5 +1,5 @@
 {
-    "name": "bagisto/laravel-shop",
+    "name": "module/laravel-shop",
     "license": "MIT",
     "description" : "Shop package for store front and customers",
     "authors": [
