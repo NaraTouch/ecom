@@ -3,8 +3,8 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Webkul\Velocity\Database\Seeders\VelocityMetaDataSeeder;
-use Webkul\Admin\Database\Seeders\DatabaseSeeder as BagistoDatabaseSeeder;
+use AppModule\Velocity\Database\Seeders\VelocityMetaDataSeeder;
+use AppModule\Admin\Database\Seeders\DatabaseSeeder as BagistoDatabaseSeeder;
 
 class DatabaseSeeder extends Seeder
 {

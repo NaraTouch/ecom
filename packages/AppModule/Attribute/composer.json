@@ -1,0 +1,27 @@
+{
+    "name": "bagisto/laravel-attribute",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jitendra Singh",
+            "email": "jitendra@AppModule.com"
+        }
+    ],
+    "require": {
+        "bagisto/laravel-core": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "AppModule\\Attribute\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AppModule\\Attribute\\Providers\\AttributeServiceProvider"
+            ],
+            "aliases": { }
+        }
+    },
+    "minimum-stability": "dev"
+}

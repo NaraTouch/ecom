@@ -1,0 +1,34 @@
+{
+    "name": "bagisto/velocity-theme",
+    "description": "Velocity Theme for Bagisto.",
+    "license": "MIT",
+
+    "authors": [
+        {
+            "name": "viveksharma-AppModule",
+            "email": "viveksh047@AppModule.com"
+        },
+        {
+            "name": "Shubham Mehrotra",
+            "email": "shubhammehrotra.symfony@AppModule.com"
+        }
+    ],
+
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "AppModule\\Velocity\\": "src/"
+        }
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AppModule\\Velocity\\Providers\\VelocityServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+
+    "minimum-stability": "dev"
+}

@@ -1,0 +1,27 @@
+{
+    "name": "bagisto/laravel-payment",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jitendra Singh",
+            "email": "jitendra@AppModule.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "AppModule\\Payment\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AppModule\\Payment\\Providers\\PaymentServiceProvider"
+            ],
+            "aliases": {
+                "Bouncer": "AppModule\\Payment\\Facades\\Bouncer"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}

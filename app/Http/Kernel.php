@@ -17,10 +17,10 @@ class Kernel extends HttpKernel
         // \App\Http\Middleware\TrustHosts::class,
         \App\Http\Middleware\TrustProxies::class,
         \Illuminate\Http\Middleware\HandleCors::class,
-        \Webkul\Core\Http\Middleware\CheckForMaintenanceMode::class,
+        \AppModule\Core\Http\Middleware\CheckForMaintenanceMode::class,
         \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
         \App\Http\Middleware\TrimStrings::class,
-        \Webkul\Core\Http\Middleware\SecureHeaders::class,
+        \AppModule\Core\Http\Middleware\SecureHeaders::class,
     ];
 
     /**
@@ -61,6 +61,6 @@ class Kernel extends HttpKernel
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
-        'cart.merger' => \Webkul\Checkout\Http\Middleware\CartMerger::class,
+        'cart.merger' => \AppModule\Checkout\Http\Middleware\CartMerger::class,
     ];
 }

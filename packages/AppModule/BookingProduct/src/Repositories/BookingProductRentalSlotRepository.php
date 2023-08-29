@@ -1,0 +1,18 @@
+<?php
+
+namespace AppModule\BookingProduct\Repositories;
+
+use AppModule\Core\Eloquent\Repository;
+
+class BookingProductRentalSlotRepository extends Repository
+{
+    /**
+     * Specify Model class name
+     *
+     * @return string
+     */
+    function model(): string
+    {
+        return 'AppModule\BookingProduct\Contracts\BookingProductRentalSlot';
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "name": "bagisto/laravel-admin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jitendra Singh",
+            "email": "jitendra@AppModule.com"
+        }
+    ],
+    "require": {
+        "bagisto/laravel-user": "dev-master",
+        "bagisto/laravel-ui": "dev-master",
+        "bagisto/laravel-core": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "AppModule\\Admin\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AppModule\\Admin\\Providers\\AdminServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "minimum-stability": "dev"
+}

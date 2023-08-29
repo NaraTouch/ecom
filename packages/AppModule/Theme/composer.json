@@ -1,0 +1,25 @@
+{
+    "name": "bagisto/laravel-theme",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jitendra Singh",
+            "email": "jitendra@AppModule.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "AppModule\\Theme\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AppModule\\Theme\\Providers\\ThemeServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "minimum-stability": "dev"
+}

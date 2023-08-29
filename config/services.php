@@ -34,12 +34,12 @@ return [
 
         'fixer' => [
             'key' => env('FIXER_API_KEY'),
-            'class' => 'Webkul\Core\Helpers\Exchange\FixerExchange'
+            'class' => 'AppModule\Core\Helpers\Exchange\FixerExchange'
         ],
 
         'exchange_rates' => [
             'key' => env('EXCHANGE_RATES_API_KEY'),
-            'class' => 'Webkul\Core\Helpers\Exchange\ExchangeRates',
+            'class' => 'AppModule\Core\Helpers\Exchange\ExchangeRates',
             'url' => env('EXCHANGE_RATES_API_ENDPOINT')
         ],
     ],

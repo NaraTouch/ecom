@@ -21,12 +21,12 @@ return [
     'providers' => [
         'customers' => [
             'driver' => 'eloquent',
-            'model'  => Webkul\Customer\Models\Customer::class,
+            'model'  => AppModule\Customer\Models\Customer::class,
         ],
 
         'admins' => [
             'driver' => 'eloquent',
-            'model'  => Webkul\User\Models\Admin::class,
+            'model'  => AppModule\User\Models\Admin::class,
         ],
     ],
 

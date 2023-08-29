@@ -1,0 +1,26 @@
+{
+    "name": "bagisto/laravel-social-login",
+    "description": "Shipping Package for Shipping Method",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "rahulshukla-AppModule",
+            "email": "rahulshukla.symfony517@AppModule.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "AppModule\\SocialLogin\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AppModule\\SocialLogin\\Providers\\SocialLoginServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "minimum-stability": "dev"
+}
