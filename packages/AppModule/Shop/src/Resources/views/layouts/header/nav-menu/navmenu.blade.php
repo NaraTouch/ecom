@@ -1,4 +1,4 @@
-{!! view_render_event('bagisto.shop.layout.header.category.before') !!}
+{!! view_render_event('module.shop.layout.header.category.before') !!}
 
 <?php
 $categories = [];
@@ -11,7 +11,7 @@ foreach (app('AppModule\Category\Repositories\CategoryRepository')->getVisibleCa
 
 <category-nav categories='@json($categories)' url="{{url()->to('/')}}"></category-nav>
 
-{!! view_render_event('bagisto.shop.layout.header.category.after') !!}
+{!! view_render_event('module.shop.layout.header.category.after') !!}
 
 @push('scripts')
 

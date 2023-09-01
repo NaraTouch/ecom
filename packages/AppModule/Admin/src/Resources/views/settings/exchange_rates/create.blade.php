@@ -47,7 +47,7 @@
 
                                 <tbody>
                                     <tr>
-                                        {!! view_render_event('bagisto.admin.settings.exchangerate.create.before') !!}
+                                        {!! view_render_event('module.admin.settings.exchangerate.create.before') !!}
 
                                         <td>
                                             {{ core()->getBaseCurrencyCode() }}
@@ -73,7 +73,7 @@
                                             </div>
                                         </td>
 
-                                        {!! view_render_event('bagisto.admin.settings.exchangerate.create.after') !!}
+                                        {!! view_render_event('module.admin.settings.exchangerate.create.after') !!}
                                     </tr>
                                 </tbody>
                             </table>

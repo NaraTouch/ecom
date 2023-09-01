@@ -1,4 +1,4 @@
-{!! view_render_event('bagisto.shop.products.view.stock.before', ['product' => $product]) !!}
+{!! view_render_event('module.shop.products.view.stock.before', ['product' => $product]) !!}
 
 <div class="col-12 availability">
     @php
@@ -14,4 +14,4 @@
     </label>
 </div>
 
-{!! view_render_event('bagisto.shop.products.view.stock.after', ['product' => $product]) !!}
+{!! view_render_event('module.shop.products.view.stock.after', ['product' => $product]) !!}

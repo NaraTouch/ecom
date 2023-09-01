@@ -35,7 +35,7 @@
                     <div class="form-container">
                         @csrf()
 
-                        {!! view_render_event('bagisto.admin.promotions.cart-rules.create.before') !!}
+                        {!! view_render_event('module.admin.promotions.cart-rules.create.before') !!}
 
                         <accordian title="{{ __('admin::app.promotions.cart-rules.rule-information') }}" :active="true">
                             <div slot="body">
@@ -310,7 +310,7 @@
                             </div>
                         </accordian>
 
-                        {!! view_render_event('bagisto.admin.promotions.cart-rules.create.after') !!}
+                        {!! view_render_event('module.admin.promotions.cart-rules.create.after') !!}
 
                         <accordian title="{{ __('admin::app.promotions.cart-rules.coupon-codes') }}" :active="false" v-if="parseInt(use_auto_generation) && parseInt(coupon_type)">
                             <div slot="body">

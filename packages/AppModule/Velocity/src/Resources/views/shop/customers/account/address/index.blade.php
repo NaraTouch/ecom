@@ -25,7 +25,7 @@
         @endif
     </div>
 
-    {!! view_render_event('bagisto.shop.customers.account.address.list.before', ['addresses' => $addresses]) !!}
+    {!! view_render_event('module.shop.customers.account.address.list.before', ['addresses' => $addresses]) !!}
 
         <div class="account-table-content">
             @if ($addresses->isEmpty())
@@ -69,7 +69,7 @@
             @endif
         </div>
 
-    {!! view_render_event('bagisto.shop.customers.account.address.list.after', ['addresses' => $addresses]) !!}
+    {!! view_render_event('module.shop.customers.account.address.list.after', ['addresses' => $addresses]) !!}
 @endsection
 
 @push('scripts')

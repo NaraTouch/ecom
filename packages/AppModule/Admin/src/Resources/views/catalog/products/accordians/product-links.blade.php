@@ -1,4 +1,4 @@
-{!! view_render_event('bagisto.admin.catalog.product.edit_form_accordian.product_links.before', ['product' => $product]) !!}
+{!! view_render_event('module.admin.catalog.product.edit_form_accordian.product_links.before', ['product' => $product]) !!}
 
 <accordian title="{{ __('admin::app.catalog.products.product-link') }}" :active="false">
     <div slot="body">
@@ -8,7 +8,7 @@
     </div>
 </accordian>
 
-{!! view_render_event('bagisto.admin.catalog.product.edit_form_accordian.product_links.before', ['product' => $product]) !!}
+{!! view_render_event('module.admin.catalog.product.edit_form_accordian.product_links.before', ['product' => $product]) !!}
 
 @push('scripts')
 

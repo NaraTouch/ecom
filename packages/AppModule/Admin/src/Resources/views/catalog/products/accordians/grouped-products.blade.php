@@ -15,21 +15,21 @@
     </style>
 @endpush
 
-{!! view_render_event('bagisto.admin.catalog.product.edit_form_accordian.grouped_products.before', ['product' => $product]) !!}
+{!! view_render_event('module.admin.catalog.product.edit_form_accordian.grouped_products.before', ['product' => $product]) !!}
 
 <accordian title="{{ __('admin::app.catalog.products.grouped-products') }}" :active="true">
     <div slot="body">
 
-        {!! view_render_event('bagisto.admin.catalog.product.edit_form_accordian.grouped_products.controls.before', ['product' => $product]) !!}
+        {!! view_render_event('module.admin.catalog.product.edit_form_accordian.grouped_products.controls.before', ['product' => $product]) !!}
 
         <grouped-product-list></grouped-product-list>
 
-        {!! view_render_event('bagisto.admin.catalog.product.edit_form_accordian.grouped_products.controls.after', ['product' => $product]) !!}
+        {!! view_render_event('module.admin.catalog.product.edit_form_accordian.grouped_products.controls.after', ['product' => $product]) !!}
 
     </div>
 </accordian>
 
-{!! view_render_event('bagisto.admin.catalog.product.edit_form_accordian.grouped_products.after', ['product' => $product]) !!}
+{!! view_render_event('module.admin.catalog.product.edit_form_accordian.grouped_products.after', ['product' => $product]) !!}
 
 @push('scripts')
     <script type="text/x-template" id="grouped-product-list-template">

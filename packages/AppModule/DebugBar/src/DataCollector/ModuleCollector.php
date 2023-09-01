@@ -13,7 +13,7 @@ use DebugBar\DataCollector\PDO\PDOCollector;
 use Debugbar;
 
 /**
- * Collector for Bagisto's Module Collector
+ * Collector for Module Collector
  */
 class ModuleCollector extends DataCollector implements DataCollectorInterface, Renderable, AssetProvider
 {

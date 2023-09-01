@@ -35,7 +35,7 @@
                     <div class="form-container">
                         @csrf()
 
-                        {!! view_render_event('bagisto.admin.promotions.catalog-rules.create.before') !!}
+                        {!! view_render_event('module.admin.promotions.catalog-rules.create.before') !!}
 
                         <accordian title="{{ __('admin::app.promotions.catalog-rules.rule-information') }}" :active="true">
                             <div slot="body">
@@ -181,7 +181,7 @@
                             </div>
                         </accordian>
 
-                        {!! view_render_event('bagisto.admin.promotions.catalog-rules.create.after') !!}
+                        {!! view_render_event('module.admin.promotions.catalog-rules.create.after') !!}
                     </div>
                 </div>
             </form>

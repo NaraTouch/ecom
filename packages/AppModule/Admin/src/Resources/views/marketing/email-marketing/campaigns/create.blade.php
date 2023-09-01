@@ -28,7 +28,7 @@
                 <div class="form-container">
                     @csrf()
 
-                    {!! view_render_event('bagisto.admin.marketing.templates.create.before') !!}
+                    {!! view_render_event('module.admin.marketing.templates.create.before') !!}
 
                     <accordian title="{{ __('admin::app.marketing.campaigns.general') }}" :active="true">
                         <div slot="body">
@@ -117,7 +117,7 @@
                         </div>
                     </accordian>
 
-                    {!! view_render_event('bagisto.admin.marketing.templates.create.after') !!}
+                    {!! view_render_event('module.admin.marketing.templates.create.after') !!}
 
                 </div>
             </div>

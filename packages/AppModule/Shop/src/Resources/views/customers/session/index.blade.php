@@ -10,7 +10,7 @@
             {{ __('shop::app.customer.login-text.no_account') }} - <a href="{{ route('shop.customer.register.index') }}">{{ __('shop::app.customer.login-text.title') }}</a>
         </div>
 
-        {!! view_render_event('bagisto.shop.customers.login.before') !!}
+        {!! view_render_event('module.shop.customers.login.before') !!}
 
         <form method="POST" action="{{ route('shop.customer.session.create') }}" @submit.prevent="onSubmit">
 
@@ -19,7 +19,7 @@
             <div class="login-form">
                 <div class="login-text">{{ __('shop::app.customer.login-form.title') }}</div>
 
-                {!! view_render_event('bagisto.shop.customers.login_form_controls.before') !!}
+                {!! view_render_event('module.shop.customers.login_form_controls.before') !!}
 
                 <div class="control-group" :class="[errors.has('email') ? 'has-error' : '']">
                     <label for="email" class="required">{{ __('shop::app.customer.login-form.email') }}</label>
@@ -59,14 +59,14 @@
                     
                 </div>
 
-                {!! view_render_event('bagisto.shop.customers.login_form_controls.after') !!}
+                {!! view_render_event('module.shop.customers.login_form_controls.after') !!}
 
                 <input class="btn btn-primary btn-lg" type="submit" value="{{ __('shop::app.customer.login-form.button_title') }}">
             </div>
 
         </form>
 
-        {!! view_render_event('bagisto.shop.customers.login.after') !!}
+        {!! view_render_event('module.shop.customers.login.after') !!}
     </div>
 @stop
 

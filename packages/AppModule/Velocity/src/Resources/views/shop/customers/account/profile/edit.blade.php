@@ -11,7 +11,7 @@
         <span></span>
     </div>
 
-    {!! view_render_event('bagisto.shop.customers.account.profile.edit.before', ['customer' => $customer]) !!}
+    {!! view_render_event('module.shop.customers.account.profile.edit.before', ['customer' => $customer]) !!}
 
     <form
         method="POST"
@@ -22,7 +22,7 @@
         <div class="account-table-content">
             @csrf
 
-            {!! view_render_event('bagisto.shop.customers.account.profile.edit_form_controls.before', ['customer' => $customer]) !!}
+            {!! view_render_event('module.shop.customers.account.profile.edit_form_controls.before', ['customer' => $customer]) !!}
 
             <div :class="`row ${errors.has('first_name') ? 'has-error' : ''}`">
                 <label class="col-12 mandatory">
@@ -35,7 +35,7 @@
                 </div>
             </div>
 
-            {!! view_render_event('bagisto.shop.customers.account.profile.edit.first_name.after', ['customer' => $customer]) !!}
+            {!! view_render_event('module.shop.customers.account.profile.edit.first_name.after', ['customer' => $customer]) !!}
 
             <div :class="`row ${errors.has('last_name') ? 'has-error' : ''}`">
                 <label class="col-12 mandatory">
@@ -48,7 +48,7 @@
                 </div>
             </div>
 
-            {!! view_render_event('bagisto.shop.customers.account.profile.edit.last_name.after', ['customer' => $customer]) !!}
+            {!! view_render_event('module.shop.customers.account.profile.edit.last_name.after', ['customer' => $customer]) !!}
 
             <div :class="`row ${errors.has('gender') ? 'has-error' : ''}`">
                 <label class="col-12 mandatory">
@@ -101,7 +101,7 @@
                 </div>
             </div>
 
-            {!! view_render_event('bagisto.shop.customers.account.profile.edit.gender.after', ['customer' => $customer]) !!}
+            {!! view_render_event('module.shop.customers.account.profile.edit.gender.after', ['customer' => $customer]) !!}
 
             <div :class="`row ${errors.has('date_of_birth') ? 'has-error' : ''}`">
                 <label class="col-12">
@@ -122,7 +122,7 @@
                 </div>
             </div>
 
-            {!! view_render_event('bagisto.shop.customers.account.profile.edit.date_of_birth.after', ['customer' => $customer]) !!}
+            {!! view_render_event('module.shop.customers.account.profile.edit.date_of_birth.after', ['customer' => $customer]) !!}
 
             <div class="row">
                 <label class="col-12 mandatory">
@@ -135,7 +135,7 @@
                 </div>
             </div>
 
-            {!! view_render_event('bagisto.shop.customers.account.profile.edit.email.after', ['customer' => $customer]) !!}
+            {!! view_render_event('module.shop.customers.account.profile.edit.email.after', ['customer' => $customer]) !!}
 
             <div class="row">
                 <label class="col-12">
@@ -148,7 +148,7 @@
                 </div>
             </div>
 
-            {!! view_render_event('bagisto.shop.customers.account.profile.edit.phone.after', ['customer' => $customer]) !!}
+            {!! view_render_event('module.shop.customers.account.profile.edit.phone.after', ['customer' => $customer]) !!}
 
             <div class="row image-container {!! $errors->has('image.*') ? 'has-error' : '' !!}">
                 <label class="col-12">
@@ -166,7 +166,7 @@
                 </div>
             </div>
 
-            {!! view_render_event('bagisto.shop.customers.account.profile.edit.image.after', ['customer' => $customer]) !!}
+            {!! view_render_event('module.shop.customers.account.profile.edit.image.after', ['customer' => $customer]) !!}
 
             <div class="row">
                 <label class="col-12">
@@ -178,7 +178,7 @@
                 </div>
             </div>
 
-            {!! view_render_event('bagisto.shop.customers.account.profile.edit.oldpassword.after', ['customer' => $customer]) !!}
+            {!! view_render_event('module.shop.customers.account.profile.edit.oldpassword.after', ['customer' => $customer]) !!}
 
             <div class="row">
                 <label class="col-12">
@@ -197,7 +197,7 @@
                 </div>
             </div>
 
-            {!! view_render_event('bagisto.shop.customers.account.profile.edit.password.after', ['customer' => $customer]) !!}
+            {!! view_render_event('module.shop.customers.account.profile.edit.password.after', ['customer' => $customer]) !!}
 
             <div class="row">
                 <label class="col-12">
@@ -219,7 +219,7 @@
                 </div>
             @endif
 
-            {!! view_render_event('bagisto.shop.customers.account.profile.edit_form_controls.after', ['customer' => $customer]) !!}
+            {!! view_render_event('module.shop.customers.account.profile.edit_form_controls.after', ['customer' => $customer]) !!}
 
             <button
                 type="submit"
@@ -229,5 +229,5 @@
         </div>
     </form>
 
-    {!! view_render_event('bagisto.shop.customers.account.profile.edit.after', ['customer' => $customer]) !!}
+    {!! view_render_event('module.shop.customers.account.profile.edit.after', ['customer' => $customer]) !!}
 @endsection

@@ -29,7 +29,7 @@
                         {{ __('velocity::app.customer.forget-password.recover-password-text')}}
                     </p>
 
-                    {!! view_render_event('bagisto.shop.customers.forget_password.before') !!}
+                    {!! view_render_event('module.shop.customers.forget_password.before') !!}
 
                     <form
                         method="post"
@@ -38,7 +38,7 @@
 
                         {{ csrf_field() }}
 
-                        {!! view_render_event('bagisto.shop.customers.forget_password_form_controls.before') !!}
+                        {!! view_render_event('module.shop.customers.forget_password_form_controls.before') !!}
 
                         <div class="control-group" :class="[errors.has('email') ? 'has-error' : '']">
                             <label for="email" class="mandatory label-style">
@@ -60,14 +60,14 @@
 
                         </div>
 
-                        {!! view_render_event('bagisto.shop.customers.forget_password_form_controls.after') !!}
+                        {!! view_render_event('module.shop.customers.forget_password_form_controls.after') !!}
 
                         <button class="theme-btn" type="submit">
                             {{ __('shop::app.customer.forgot-password.submit') }}
                         </button>
                     </form>
 
-                    {!! view_render_event('bagisto.shop.customers.forget_password.after') !!}
+                    {!! view_render_event('module.shop.customers.forget_password.after') !!}
                 </div>
             </div>
         </div>

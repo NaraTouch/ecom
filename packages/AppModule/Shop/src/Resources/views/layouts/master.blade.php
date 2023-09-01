@@ -13,12 +13,12 @@
     <meta http-equiv="content-language" content="{{ app()->getLocale() }}">
     <link rel="stylesheet" href="{{ asset('vendor/AppModule/ui/assets/css/ui.css') }}">
 
-    <link rel="stylesheet" href="{{ bagisto_asset('css/shop.css') }}">
+    <link rel="stylesheet" href="{{ app_asset('css/shop.css') }}">
 
     @if ($favicon = core()->getCurrentChannel()->favicon_url)
         <link rel="icon" sizes="16x16" href="{{ $favicon }}" />
     @else
-        <link rel="icon" sizes="16x16" href="{{ bagisto_asset('images/favicon.ico') }}" />
+        <link rel="icon" sizes="16x16" href="{{ app_asset('images/favicon.ico') }}" />
     @endif
 
     @yield('head')
@@ -31,7 +31,7 @@
 
     @stack('css')
 
-    {!! view_render_event('bagisto.shop.layout.head') !!}
+    {!! view_render_event('module.shop.layout.head') !!}
 
     <style>
         {!! core()->getConfigData('general.content.custom_scripts.custom_css') !!}
@@ -42,38 +42,38 @@
 
 <body @if (core()->getCurrentLocale() && core()->getCurrentLocale()->direction == 'rtl') class="rtl" @endif style="scroll-behavior: smooth;">
 
-    {!! view_render_event('bagisto.shop.layout.body.before') !!}
+    {!! view_render_event('module.shop.layout.body.before') !!}
 
     <div id="app">
         <flash-wrapper ref='flashes'></flash-wrapper>
 
         <div class="main-container-wrapper">
 
-            {!! view_render_event('bagisto.shop.layout.header.before') !!}
+            {!! view_render_event('module.shop.layout.header.before') !!}
 
             @include('shop::layouts.header.index')
 
-            {!! view_render_event('bagisto.shop.layout.header.after') !!}
+            {!! view_render_event('module.shop.layout.header.after') !!}
 
             @yield('slider')
 
             <main class="content-container">
 
-                {!! view_render_event('bagisto.shop.layout.content.before') !!}
+                {!! view_render_event('module.shop.layout.content.before') !!}
 
                 @yield('content-wrapper')
 
-                {!! view_render_event('bagisto.shop.layout.content.after') !!}
+                {!! view_render_event('module.shop.layout.content.after') !!}
 
             </main>
 
         </div>
 
-        {!! view_render_event('bagisto.shop.layout.footer.before') !!}
+        {!! view_render_event('module.shop.layout.footer.before') !!}
 
         @include('shop::layouts.footer.footer')
 
-        {!! view_render_event('bagisto.shop.layout.footer.after') !!}
+        {!! view_render_event('module.shop.layout.footer.after') !!}
 
         @if (core()->getConfigData('general.content.footer.footer_toggle'))
             <div class="footer">
@@ -114,12 +114,12 @@
         @endif
     </script>
 
-    <script type="text/javascript" src="{{ bagisto_asset('js/shop.js') }}" ></script>
+    <script type="text/javascript" src="{{ app_asset('js/shop.js') }}" ></script>
     <script type="text/javascript" src="{{ asset('vendor/AppModule/ui/assets/js/ui.js') }}"></script>
 
     @stack('scripts')
 
-    {!! view_render_event('bagisto.shop.layout.body.after') !!}
+    {!! view_render_event('module.shop.layout.body.after') !!}
 
     <div class="modal-overlay"></div>
 

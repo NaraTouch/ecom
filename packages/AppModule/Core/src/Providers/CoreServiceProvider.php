@@ -47,11 +47,11 @@ class CoreServiceProvider extends ServiceProvider
 
         $this->loadViewsFrom(__DIR__ . '/../Resources/views', 'core');
 
-        Event::listen('bagisto.shop.layout.body.after', static function (ViewRenderEventManager $viewRenderEventManager) {
+        Event::listen('module.shop.layout.body.after', static function (ViewRenderEventManager $viewRenderEventManager) {
             $viewRenderEventManager->addTemplate('core::blade.tracer.style');
         });
 
-        Event::listen('bagisto.admin.layout.head', static function (ViewRenderEventManager $viewRenderEventManager) {
+        Event::listen('module.admin.layout.head', static function (ViewRenderEventManager $viewRenderEventManager) {
             $viewRenderEventManager->addTemplate('core::blade.tracer.style');
         });
 
@@ -102,8 +102,8 @@ class CoreServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->commands([
-                \AppModule\Core\Console\Commands\BagistoPublish::class,
-                \AppModule\Core\Console\Commands\BagistoVersion::class,
+                \AppModule\Core\Console\Commands\AppPublish::class,
+                \AppModule\Core\Console\Commands\AppVersion::class,
                 \AppModule\Core\Console\Commands\Install::class,
                 \AppModule\Core\Console\Commands\ExchangeRateUpdate::class,
                 \AppModule\Core\Console\Commands\BookingCron::class,

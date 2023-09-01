@@ -29,12 +29,12 @@
                 <div class="form-container">
                     @csrf()
 
-                    {!! view_render_event('bagisto.admin.catalog.family.create_form_accordian.general.before') !!}
+                    {!! view_render_event('module.admin.catalog.family.create_form_accordian.general.before') !!}
 
                     <accordian title="{{ __('admin::app.catalog.families.general') }}" :active="true">
                         <div slot="body">
 
-                            {!! view_render_event('bagisto.admin.catalog.family.create_form_accordian.general.controls.before') !!}
+                            {!! view_render_event('module.admin.catalog.family.create_form_accordian.general.controls.before') !!}
 
                             <div class="control-group" :class="[errors.has('code') ? 'has-error' : '']">
                                 <label for="code" class="required">{{ __('admin::app.catalog.families.code') }}</label>
@@ -48,28 +48,28 @@
                                 <span class="control-error" v-if="errors.has('name')">@{{ errors.first('name') }}</span>
                             </div>
 
-                            {!! view_render_event('bagisto.admin.catalog.family.create_form_accordian.general.controls.after') !!}
+                            {!! view_render_event('module.admin.catalog.family.create_form_accordian.general.controls.after') !!}
 
                         </div>
                     </accordian>
 
-                    {!! view_render_event('bagisto.admin.catalog.family.create_form_accordian.general.after') !!}
+                    {!! view_render_event('module.admin.catalog.family.create_form_accordian.general.after') !!}
 
 
-                    {!! view_render_event('bagisto.admin.catalog.family.create_form_accordian.groups.before') !!}
+                    {!! view_render_event('module.admin.catalog.family.create_form_accordian.groups.before') !!}
 
                     <accordian title="{{ __('admin::app.catalog.families.groups') }}" :active="true">
                         <div slot="body">
 
-                            {!! view_render_event('bagisto.admin.catalog.family.create_form_accordian.groups.controls.before') !!}
+                            {!! view_render_event('module.admin.catalog.family.create_form_accordian.groups.controls.before') !!}
 
                             <group-list></group-list>
 
-                            {!! view_render_event('bagisto.admin.catalog.family.create_form_accordian.groups.controls.after') !!}
+                            {!! view_render_event('module.admin.catalog.family.create_form_accordian.groups.controls.after') !!}
                         </div>
                     </accordian>
 
-                    {!! view_render_event('bagisto.admin.catalog.family.create_form_accordian.groups.after') !!}
+                    {!! view_render_event('module.admin.catalog.family.create_form_accordian.groups.after') !!}
 
                 </div>
             </div>

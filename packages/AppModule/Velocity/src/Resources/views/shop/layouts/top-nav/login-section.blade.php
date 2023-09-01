@@ -1,4 +1,4 @@
-{!! view_render_event('bagisto.shop.layout.header.account-item.before') !!}
+{!! view_render_event('module.shop.layout.header.account-item.before') !!}
 
 <div id="account">
     <div class="d-inline-block welcome-content dropdown-toggle">
@@ -93,4 +93,4 @@
     @endauth
 </div>
 
-{!! view_render_event('bagisto.shop.layout.header.account-item.after') !!}
+{!! view_render_event('module.shop.layout.header.account-item.after') !!}

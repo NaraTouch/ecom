@@ -35,7 +35,7 @@
         @endif
     </div>
 
-    {!! view_render_event('bagisto.shop.customers.account.orders.view.before', ['order' => $order]) !!}
+    {!! view_render_event('module.shop.customers.account.orders.view.before', ['order' => $order]) !!}
 
     <div class="sale-container mt10">
         <tabs>
@@ -524,7 +524,7 @@
                             <div class="box-content">
                                 @include ('admin::sales.address', ['address' => $order->billing_address])
 
-                                {!! view_render_event('bagisto.shop.customers.account.orders.view.billing-address.after', ['order' => $order]) !!}
+                                {!! view_render_event('module.shop.customers.account.orders.view.billing-address.after', ['order' => $order]) !!}
                             </div>
                         </div>
                     @endif
@@ -538,7 +538,7 @@
                             <div class="box-content">
                                 @include ('admin::sales.address', ['address' => $order->shipping_address])
 
-                                {!! view_render_event('bagisto.shop.customers.account.orders.view.shipping-address.after', ['order' => $order]) !!}
+                                {!! view_render_event('module.shop.customers.account.orders.view.shipping-address.after', ['order' => $order]) !!}
                             </div>
                         </div>
 
@@ -550,7 +550,7 @@
                             <div class="box-content">
                                 {{ $order->shipping_title }}
 
-                                {!! view_render_event('bagisto.shop.customers.account.orders.view.shipping-method.after', ['order' => $order]) !!}
+                                {!! view_render_event('module.shop.customers.account.orders.view.shipping-method.after', ['order' => $order]) !!}
                             </div>
                         </div>
                     @endif
@@ -572,7 +572,7 @@
                                 </div>
                             @endif
 
-                            {!! view_render_event('bagisto.shop.customers.account.orders.view.payment-method.after', ['order' => $order]) !!}
+                            {!! view_render_event('module.shop.customers.account.orders.view.payment-method.after', ['order' => $order]) !!}
                         </div>
                     </div>
                 </div>
@@ -580,7 +580,7 @@
         </div>
     </div>
 
-    {!! view_render_event('bagisto.shop.customers.account.orders.view.after', ['order' => $order]) !!}
+    {!! view_render_event('module.shop.customers.account.orders.view.after', ['order' => $order]) !!}
 @endsection
 
 @push('scripts')

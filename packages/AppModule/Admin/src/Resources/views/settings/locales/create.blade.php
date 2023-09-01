@@ -27,7 +27,7 @@
                 <div class="form-container">
                     @csrf()
 
-                    {!! view_render_event('bagisto.admin.settings.locale.create.before') !!}
+                    {!! view_render_event('module.admin.settings.locale.create.before') !!}
 
                     <accordian title="{{ __('admin::app.settings.locales.general') }}" :active="true">
                         <div slot="body">
@@ -64,7 +64,7 @@
                                 <span class="control-info mt-10">{{ __('velocity::app.admin.meta-data.image-locale-resolution') }}</span>
                             </div>
 
-                            {!! view_render_event('bagisto.admin.settings.locale.create.after') !!}
+                            {!! view_render_event('module.admin.settings.locale.create.after') !!}
                         </div>
                     </accordian>
 

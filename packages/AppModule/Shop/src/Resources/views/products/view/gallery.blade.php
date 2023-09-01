@@ -8,7 +8,7 @@
     $images = array_merge($images, $videos);
 @endphp
 
-{!! view_render_event('bagisto.shop.products.view.gallery.before', ['product' => $product]) !!}
+{!! view_render_event('module.shop.products.view.gallery.before', ['product' => $product]) !!}
 
 <div class="product-image-group">
     <div class="cp-spinner cp-round" id="loader"></div>
@@ -18,7 +18,7 @@
     @include ('shop::products.view.product-add')
 </div>
 
-{!! view_render_event('bagisto.shop.products.view.gallery.after', ['product' => $product]) !!}
+{!! view_render_event('module.shop.products.view.gallery.after', ['product' => $product]) !!}
 
 @push('scripts')
     <script type="text/x-template" id="product-gallery-template">

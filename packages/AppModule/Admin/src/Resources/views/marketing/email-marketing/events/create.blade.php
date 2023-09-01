@@ -28,7 +28,7 @@
                 <div class="form-container">
                     @csrf()
 
-                    {!! view_render_event('bagisto.admin.marketing.events.create.before') !!}
+                    {!! view_render_event('module.admin.marketing.events.create.before') !!}
 
                     <accordian title="{{ __('admin::app.marketing.events.general') }}" :active="true">
                         <div slot="body">
@@ -55,7 +55,7 @@
                         </div>
                     </accordian>
 
-                    {!! view_render_event('bagisto.admin.marketing.events.create.after') !!}
+                    {!! view_render_event('module.admin.marketing.events.create.after') !!}
 
                 </div>
             </div>

@@ -1,6 +1,6 @@
 @inject ('reviewHelper', 'AppModule\Product\Helpers\Review')
 
-{!! view_render_event('bagisto.shop.products.review.before', ['product' => $product]) !!}
+{!! view_render_event('module.shop.products.review.before', ['product' => $product]) !!}
 
 @if ($total = $reviewHelper->getTotalReviews($product))
     <div class="product-ratings mb-10">
@@ -25,4 +25,4 @@
     </div>
 @endif
 
-{!! view_render_event('bagisto.shop.products.review.after', ['product' => $product]) !!}
+{!! view_render_event('module.shop.products.review.after', ['product' => $product]) !!}

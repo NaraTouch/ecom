@@ -189,7 +189,7 @@
                                     @endforeach
                                 </div>
 
-                                {!! view_render_event('bagisto.shop.checkout.cart.controls.after', ['cart' => $cart]) !!}
+                                {!! view_render_event('module.shop.checkout.cart.controls.after', ['cart' => $cart]) !!}
                                 <div class="misc">
                                     <a
                                         class="theme-btn light fs16 text-center"
@@ -221,7 +221,7 @@
                                     @endif
                                 </div>
 
-                                {!! view_render_event('bagisto.shop.checkout.cart.controls.after', ['cart' => $cart]) !!}
+                                {!! view_render_event('module.shop.checkout.cart.controls.after', ['cart' => $cart]) !!}
                             </form>
                         </div>
 
@@ -229,7 +229,7 @@
                     </div>
                 @endif
 
-                {!! view_render_event('bagisto.shop.checkout.cart.summary.after', ['cart' => $cart]) !!}
+                {!! view_render_event('module.shop.checkout.cart.summary.after', ['cart' => $cart]) !!}
 
                     @if ($cart)
                         <div class="col-lg-4 col-md-12 offset-lg-1 row order-summary-container">
@@ -252,7 +252,7 @@
                         </a>
                     @endif
 
-                {!! view_render_event('bagisto.shop.checkout.cart.summary.after', ['cart' => $cart]) !!}
+                {!! view_render_event('module.shop.checkout.cart.summary.after', ['cart' => $cart]) !!}
             </section>
         </div>
     </script>

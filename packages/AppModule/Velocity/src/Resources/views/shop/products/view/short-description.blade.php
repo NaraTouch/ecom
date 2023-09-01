@@ -1,4 +1,4 @@
-{!! view_render_event('bagisto.shop.products.view.short_description.before', ['product' => $product]) !!}
+{!! view_render_event('module.shop.products.view.short_description.before', ['product' => $product]) !!}
 
     <accordian :title="'{{ __('shop::app.products.short-description') }}'" :active="true">
         <div slot="header">
@@ -16,4 +16,4 @@
         </div>
     </accordian>
 
-{!! view_render_event('bagisto.shop.products.view.short_description.after', ['product' => $product]) !!}
+{!! view_render_event('module.shop.products.view.short_description.after', ['product' => $product]) !!}

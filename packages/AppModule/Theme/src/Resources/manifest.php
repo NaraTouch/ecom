@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'name'    => 'AppModule Bagisto Theme',
+    'name'    => 'AppModule Theme',
     'version' => '0.0.1',
 ];

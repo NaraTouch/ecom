@@ -1,19 +1,8 @@
 {
     "name": "module/velocity-theme",
-    "description": "Velocity Theme for Bagisto.",
+    "description": "Velocity Theme.",
     "license": "MIT",
-
-    "authors": [
-        {
-            "name": "viveksharma-AppModule",
-            "email": "viveksh047@AppModule.com"
-        },
-        {
-            "name": "Shubham Mehrotra",
-            "email": "shubhammehrotra.symfony@AppModule.com"
-        }
-    ],
-
+    "authors": [],
     "require": {},
     "autoload": {
         "psr-4": {

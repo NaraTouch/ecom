@@ -4,14 +4,14 @@ namespace AppModule\Core\Console\Commands;
 
 use Illuminate\Console\Command;
 
-class BagistoPublish extends Command
+class AppPublish extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'bagisto:publish { --force : Overwrite any existing files }';
+    protected $signature = 'app:publish { --force : Overwrite any existing files }';
 
     /**
      * The console command description.
@@ -27,7 +27,7 @@ class BagistoPublish extends Command
      */
     protected $providers = [
         /**
-         * Bagisto providers.
+         * App providers.
          */
         [
             'name'     => 'Admin',

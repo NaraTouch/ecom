@@ -1,17 +1,12 @@
 {
     "name": "module/laravel-booking-product",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Jitendra Singh",
-            "email": "jitendra@AppModule.com"
-        }
-    ],
+    "authors": [],
     "require": {
-        "bagisto/laravel-core": "dev-master",
-        "bagisto/laravel-rule": "dev-master",
-        "bagisto/laravel-sales": "dev-master",
-        "bagisto/laravel-product": "dev-master"
+        "module/laravel-core": "dev-master",
+        "module/laravel-rule": "dev-master",
+        "module/laravel-sales": "dev-master",
+        "module/laravel-product": "dev-master"
     },
     "autoload": {
         "psr-4": {

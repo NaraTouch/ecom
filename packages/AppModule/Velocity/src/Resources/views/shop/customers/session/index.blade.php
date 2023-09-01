@@ -7,7 +7,7 @@
 @section('content-wrapper')
     <div class="auth-content form-container">
 
-        {!! view_render_event('bagisto.shop.customers.login.before') !!}
+        {!! view_render_event('module.shop.customers.login.before') !!}
 
             <div class="container">
                 <div class="col-lg-10 col-md-12 offset-lg-1">
@@ -41,7 +41,7 @@
 
                             {{ csrf_field() }}
 
-                            {!! view_render_event('bagisto.shop.customers.login_form_controls.before') !!}
+                            {!! view_render_event('module.shop.customers.login_form_controls.before') !!}
 
                             <div class="form-group" :class="[errors.has('email') ? 'has-error' : '']">
                                 <label for="email" class="mandatory label-style">
@@ -102,7 +102,7 @@
 
                             </div>
 
-                            {!! view_render_event('bagisto.shop.customers.login_form_controls.after') !!}
+                            {!! view_render_event('module.shop.customers.login_form_controls.after') !!}
 
                             <input class="theme-btn" type="submit" value="{{ __('shop::app.customer.login-form.button_title') }}">
 
@@ -111,7 +111,7 @@
                 </div>
             </div>
 
-        {!! view_render_event('bagisto.shop.customers.login.after') !!}
+        {!! view_render_event('module.shop.customers.login.after') !!}
     </div>
 @endsection
 

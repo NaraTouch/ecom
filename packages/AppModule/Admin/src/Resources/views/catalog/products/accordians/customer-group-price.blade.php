@@ -15,11 +15,11 @@
     </style>
 @endpush
 
-{!! view_render_event('bagisto.admin.catalog.product.edit_form_accordian.customer_group_prices.before', ['product' => $product]) !!}
+{!! view_render_event('module.admin.catalog.product.edit_form_accordian.customer_group_prices.before', ['product' => $product]) !!}
 
 <customer-group-price-list></customer-group-price-list>
 
-{!! view_render_event('bagisto.admin.catalog.product.edit_form_accordian.customer_group_prices.after', ['product' => $product]) !!}
+{!! view_render_event('module.admin.catalog.product.edit_form_accordian.customer_group_prices.after', ['product' => $product]) !!}
 
 @push('scripts')
     <script type="text/x-template" id="customer-group-price-list-template">

@@ -28,7 +28,7 @@
                 <div class="form-container">
                     @csrf()
 
-                    {!! view_render_event('bagisto.admin.settings.currencies.create.before') !!}
+                    {!! view_render_event('module.admin.settings.currencies.create.before') !!}
 
                     <accordian title="{{ __('admin::app.settings.currencies.general') }}" :active="true">
                         <div slot="body">
@@ -57,7 +57,7 @@
                         </div>
                     </accordian>
 
-                    {!! view_render_event('bagisto.admin.settings.currencies.create.after') !!}
+                    {!! view_render_event('module.admin.settings.currencies.create.after') !!}
                 </div>
             </div>
         </form>

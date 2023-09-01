@@ -1,12 +1,7 @@
 {
     "name": "module/laravel-checkout",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Bagisto",
-            "email": "support@bagisto.com"
-        }
-    ],
+    "authors": [],
     "require": {},
     "autoload": {
         "psr-4": {

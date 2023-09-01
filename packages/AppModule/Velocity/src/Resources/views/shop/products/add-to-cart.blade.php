@@ -1,4 +1,4 @@
-{!! view_render_event('bagisto.shop.products.add_to_cart.before', ['product' => $product]) !!}
+{!! view_render_event('module.shop.products.add_to_cart.before', ['product' => $product]) !!}
 
 <div class="mx-0 no-padding">
     @if (
@@ -95,4 +95,4 @@
     @endif
 </div>
 
-{!! view_render_event('bagisto.shop.products.add_to_cart.after', ['product' => $product]) !!}
+{!! view_render_event('module.shop.products.add_to_cart.after', ['product' => $product]) !!}

@@ -1499,7 +1499,7 @@ return [
     ],
 
     'footer' => [
-        'copy-right' => ' مدعوم من <a href="https://bagisto.com/" target="_blank"> باغيستو </a> ، مشروع مجتمع بواسطة <a href="https://AppModule.com/" target="_blank">AppModule</a>',
+        'copy-right' => ' مدعوم من <a href="#" target="_blank"> باغيستو </a> ، مشروع مجتمع بواسطة <a href="https://AppModule.com/" target="_blank">AppModule</a>',
     ],
 
     'admin' => [

@@ -35,7 +35,7 @@
 
                     @csrf()
 
-                    {!! view_render_event('bagisto.admin.settings.slider.edit.before') !!}
+                    {!! view_render_event('module.admin.settings.slider.edit.before') !!}
 
                     <div class="control-group multi-select" :class="[errors.has('locale[]') ? 'has-error' : '']">
                         <label for="locale">{{ __('admin::app.datagrid.locale') }}</label>
@@ -108,7 +108,7 @@
                         <span class="control-error" v-if="errors.has('content')">@{{ errors.first('content') }}</span>
                     </div>
 
-                    {!! view_render_event('bagisto.admin.settings.slider.edit.after', ['slider' => $slider]) !!}
+                    {!! view_render_event('module.admin.settings.slider.edit.after', ['slider' => $slider]) !!}
                 </div>
             </div>
         </form>

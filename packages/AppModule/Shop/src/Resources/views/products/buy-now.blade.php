@@ -1,4 +1,4 @@
-{!! view_render_event('bagisto.shop.products.buy_now.before', ['product' => $product]) !!}
+{!! view_render_event('module.shop.products.buy_now.before', ['product' => $product]) !!}
 
 <button
     type="submit"
@@ -8,4 +8,4 @@
     {{ __('shop::app.products.buy-now') }}
 </button>
 
-{!! view_render_event('bagisto.shop.products.buy_now.after', ['product' => $product]) !!}
+{!! view_render_event('module.shop.products.buy_now.after', ['product' => $product]) !!}

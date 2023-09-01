@@ -43,7 +43,7 @@
                     @csrf()
                     <input name="_method" type="hidden" value="PUT">
 
-                    {!! view_render_event('bagisto.admin.settings.channel.edit.before') !!}
+                    {!! view_render_event('module.admin.settings.channel.edit.before') !!}
 
                     {{-- general --}}
                     <accordian title="{{ __('admin::app.settings.channels.general') }}" :active="true">
@@ -302,7 +302,7 @@
                         </div>
                     </accordian>
 
-                    {!! view_render_event('bagisto.admin.settings.channel.edit.after') !!}
+                    {!! view_render_event('module.admin.settings.channel.edit.after') !!}
                 </div>
             </div>
         </form>

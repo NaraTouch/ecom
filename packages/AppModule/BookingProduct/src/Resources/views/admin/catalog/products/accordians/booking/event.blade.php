@@ -1,8 +1,8 @@
-{!! view_render_event('bagisto.admin.catalog.product.edit_form_accordian.booking.event.before', ['product' => $product]) !!}
+{!! view_render_event('module.admin.catalog.product.edit_form_accordian.booking.event.before', ['product' => $product]) !!}
 
 <event-booking></event-booking>
 
-{!! view_render_event('bagisto.admin.catalog.product.edit_form_accordian.booking.event.after', ['product' => $product]) !!}
+{!! view_render_event('module.admin.catalog.product.edit_form_accordian.booking.event.after', ['product' => $product]) !!}
 
 @push('scripts')
     <script type="text/x-template" id="event-booking-template">

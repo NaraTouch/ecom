@@ -32,12 +32,12 @@
 
                 <input type="hidden" name="locale" value="all"/>
 
-                {!! view_render_event('bagisto.admin.content.create_form_accordian.page.before') !!}
+                {!! view_render_event('module.admin.content.create_form_accordian.page.before') !!}
 
                 <accordian :title="'{{ __('velocity::app.admin.contents.tab.page') }}'" :active="true">
                     <div slot="body">
 
-                        {!! view_render_event('bagisto.admin.content.create_form_accordian.page.controls.before') !!}
+                        {!! view_render_event('module.admin.content.create_form_accordian.page.controls.before') !!}
 
                         <div class="control-group" :class="[errors.has('title') ? 'has-error' : '']">
                             <label for="title" class="required">
@@ -68,28 +68,28 @@
                             <span class="control-error" v-if="errors.has('status')" v-text="errors.first('status')"></span>
                         </div>
 
-                        {!! view_render_event('bagisto.admin.content.create_form_accordian.page.controls.after') !!}
+                        {!! view_render_event('module.admin.content.create_form_accordian.page.controls.after') !!}
 
                     </div>
                 </accordian>
 
-                {!! view_render_event('bagisto.admin.content.create_form_accordian.page.after') !!}
+                {!! view_render_event('module.admin.content.create_form_accordian.page.after') !!}
 
-                {!! view_render_event('bagisto.admin.content.create_form_accordian.content.before') !!}
+                {!! view_render_event('module.admin.content.create_form_accordian.content.before') !!}
 
                 <accordian :title="'{{ __('velocity::app.admin.contents.tab.content') }}'" :active="true">
                     <div slot="body">
 
-                        {!! view_render_event('bagisto.admin.content.create_form_accordian.content.controls.before') !!}
+                        {!! view_render_event('module.admin.content.create_form_accordian.content.controls.before') !!}
 
                             <content-type></content-type>
 
-                        {!! view_render_event('bagisto.admin.content.create_form_accordian.content.controls.after') !!}
+                        {!! view_render_event('module.admin.content.create_form_accordian.content.controls.after') !!}
 
                     </div>
                 </accordian>
 
-                {!! view_render_event('bagisto.admin.content.create_form_accordian.content.after') !!}
+                {!! view_render_event('module.admin.content.create_form_accordian.content.after') !!}
 
             </div>
 

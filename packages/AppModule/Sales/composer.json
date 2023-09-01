@@ -1,12 +1,7 @@
 {
     "name": "module/laravel-sales",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Jitendra Singh",
-            "email": "jitendra@AppModule.com"
-        }
-    ],
+    "authors": [],
     "require": {},
     "autoload": {
         "psr-4": {

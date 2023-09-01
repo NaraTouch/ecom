@@ -102,14 +102,14 @@
 
                 <div class="item-details">
 
-                    {!! view_render_event('bagisto.shop.checkout.name.before', ['item' => $item]) !!}
+                    {!! view_render_event('module.shop.checkout.name.before', ['item' => $item]) !!}
 
                     <div class="item-title">
                         {{ $item->product->name }}
                     </div>
 
-                    {!! view_render_event('bagisto.shop.checkout.name.after', ['item' => $item]) !!}
-                    {!! view_render_event('bagisto.shop.checkout.price.before', ['item' => $item]) !!}
+                    {!! view_render_event('module.shop.checkout.name.after', ['item' => $item]) !!}
+                    {!! view_render_event('module.shop.checkout.price.before', ['item' => $item]) !!}
 
                     <div class="row">
                         <span class="title">
@@ -120,8 +120,8 @@
                         </span>
                     </div>
 
-                    {!! view_render_event('bagisto.shop.checkout.price.after', ['item' => $item]) !!}
-                    {!! view_render_event('bagisto.shop.checkout.quantity.before', ['item' => $item]) !!}
+                    {!! view_render_event('module.shop.checkout.price.after', ['item' => $item]) !!}
+                    {!! view_render_event('module.shop.checkout.quantity.before', ['item' => $item]) !!}
 
                     <div class="row">
                         <span class="title">
@@ -132,9 +132,9 @@
                         </span>
                     </div>
 
-                    {!! view_render_event('bagisto.shop.checkout.quantity.after', ['item' => $item]) !!}
+                    {!! view_render_event('module.shop.checkout.quantity.after', ['item' => $item]) !!}
 
-                    {!! view_render_event('bagisto.shop.checkout.options.before', ['item' => $item]) !!}
+                    {!! view_render_event('module.shop.checkout.options.before', ['item' => $item]) !!}
 
                     @if (isset($item->additional['attributes']))
                         <div class="item-options">
@@ -146,7 +146,7 @@
                         </div>
                     @endif
 
-                    {!! view_render_event('bagisto.shop.checkout.options.after', ['item' => $item]) !!}
+                    {!! view_render_event('module.shop.checkout.options.after', ['item' => $item]) !!}
                 </div>
             </div>
         @endforeach

@@ -1,8 +1,8 @@
 @inject ('toolbarHelper', 'AppModule\Product\Helpers\Toolbar')
 
-{!! view_render_event('bagisto.shop.products.list.toolbar.before') !!}
+{!! view_render_event('module.shop.products.list.toolbar.before') !!}
     <toolbar-component></toolbar-component>
-{!! view_render_event('bagisto.shop.products.list.toolbar.after') !!}
+{!! view_render_event('module.shop.products.list.toolbar.after') !!}
 
 @push('scripts')
     <script type="text/x-template" id="toolbar-template">

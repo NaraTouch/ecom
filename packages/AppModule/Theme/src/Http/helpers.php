@@ -9,8 +9,8 @@ if (! function_exists('themes')) {
     }
 }
 
-if (! function_exists('bagisto_asset')) {
-    function bagisto_asset($path, $secure = null)
+if (! function_exists('app_asset')) {
+    function app_asset($path, $secure = null)
     {
         return themes()->url($path, $secure);
     }

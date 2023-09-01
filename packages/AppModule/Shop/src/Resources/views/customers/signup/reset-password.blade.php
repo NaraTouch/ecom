@@ -8,7 +8,7 @@
 
 <div class="auth-content">
 
-    {!! view_render_event('bagisto.shop.customers.reset_password.before') !!}
+    {!! view_render_event('module.shop.customers.reset_password.before') !!}
 
     <form method="post" action="{{ route('shop.customer.reset_password.store') }}" >
 
@@ -20,7 +20,7 @@
 
             <input type="hidden" name="token" value="{{ old('token') ?: $token }}">
 
-            {!! view_render_event('bagisto.shop.customers.reset_password_form_controls.before') !!}
+            {!! view_render_event('module.shop.customers.reset_password_form_controls.before') !!}
 
             <div class="control-group" :class="[errors.has('email') ? 'has-error' : '']">
                 <label for="email">{{ __('shop::app.customer.reset-password.email') }}</label>
@@ -40,13 +40,13 @@
                 <span class="control-error" v-if="errors.has('confirm_password')">@{{ errors.first('confirm_password') }}</span>
             </div>
 
-            {!! view_render_event('bagisto.shop.customers.reset_password_form_controls.before') !!}
+            {!! view_render_event('module.shop.customers.reset_password_form_controls.before') !!}
 
             <input class="btn btn-primary btn-lg" type="submit" value="{{ __('shop::app.customer.reset-password.submit-btn-title') }}">
 
         </div>
     </form>
 
-    {!! view_render_event('bagisto.shop.customers.reset_password.before') !!}
+    {!! view_render_event('module.shop.customers.reset_password.before') !!}
 </div>
 @endsection

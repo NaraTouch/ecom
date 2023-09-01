@@ -4,7 +4,7 @@
     $total = $reviewHelper->getTotalReviews($product);
 @endphp
 
-{!! view_render_event('bagisto.shop.products.review.before', ['product' => $product]) !!}
+{!! view_render_event('module.shop.products.review.before', ['product' => $product]) !!}
 
 @if ($total)
     @php
@@ -224,4 +224,4 @@
     @endif
 @endif
 
-{!! view_render_event('bagisto.shop.products.review.after', ['product' => $product]) !!}
+{!! view_render_event('module.shop.products.review.after', ['product' => $product]) !!}

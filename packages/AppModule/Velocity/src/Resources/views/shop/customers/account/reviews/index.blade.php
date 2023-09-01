@@ -22,7 +22,7 @@
         @endif
     </div>
 
-    {!! view_render_event('bagisto.shop.customers.account.reviews.list.before', ['reviews' => $reviews]) !!}
+    {!! view_render_event('module.shop.customers.account.reviews.list.before', ['reviews' => $reviews]) !!}
 
     <div class="reviews-container">
         @if (! $reviews->isEmpty())
@@ -85,7 +85,7 @@
         @endif
     </div>
 
-    {!! view_render_event('bagisto.shop.customers.account.reviews.list.after', ['reviews' => $reviews]) !!}
+    {!! view_render_event('module.shop.customers.account.reviews.list.after', ['reviews' => $reviews]) !!}
 @endsection
 
 @push('scripts')

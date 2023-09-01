@@ -11,7 +11,7 @@
             <div class="style:overflow: auto;">&nbsp;</div>
 
             <div slot="body">
-                {!! view_render_event('bagisto.admin.customer.edit.form.before', ['customer' => $customer]) !!}
+                {!! view_render_event('module.admin.customer.edit.form.before', ['customer' => $customer]) !!}
 
                 <div class="control-group" :class="[errors.has('first_name') ? 'has-error' : '']">
                     <label for="first_name" class="required"> {{ __('admin::app.customers.customers.first_name') }}</label>
@@ -28,7 +28,7 @@
                     <span class="control-error" v-if="errors.has('first_name')">@{{ errors.first('first_name') }}</span>
                 </div>
 
-                {!! view_render_event('bagisto.admin.customer.edit.first_name.after', ['customer' => $customer]) !!}
+                {!! view_render_event('module.admin.customer.edit.first_name.after', ['customer' => $customer]) !!}
 
                 <div class="control-group" :class="[errors.has('last_name') ? 'has-error' : '']">
                     <label for="last_name" class="required"> {{ __('admin::app.customers.customers.last_name') }}</label>
@@ -45,7 +45,7 @@
                     <span class="control-error" v-if="errors.has('last_name')">@{{ errors.first('last_name') }}</span>
                 </div>
 
-                {!! view_render_event('bagisto.admin.customer.edit.last_name.after', ['customer' => $customer]) !!}
+                {!! view_render_event('module.admin.customer.edit.last_name.after', ['customer' => $customer]) !!}
 
                 <div class="control-group" :class="[errors.has('email') ? 'has-error' : '']">
                     <label for="email" class="required"> {{ __('admin::app.customers.customers.email') }}</label>
@@ -62,7 +62,7 @@
                     <span class="control-error" v-if="errors.has('email')">@{{ errors.first('email') }}</span>
                 </div>
 
-                {!! view_render_event('bagisto.admin.customer.edit.email.after', ['customer' => $customer]) !!}
+                {!! view_render_event('module.admin.customer.edit.email.after', ['customer' => $customer]) !!}
 
                 <div class="control-group" :class="[errors.has('gender') ? 'has-error' : '']">
                     <label for="gender" class="required">{{ __('admin::app.customers.customers.gender') }}</label>
@@ -85,7 +85,7 @@
                     <span class="control-error" v-if="errors.has('gender')">@{{ errors.first('gender') }}</span>
                 </div>
 
-                {!! view_render_event('bagisto.admin.customer.edit.gender.after', ['customer' => $customer]) !!}
+                {!! view_render_event('module.admin.customer.edit.gender.after', ['customer' => $customer]) !!}
 
                 <div class="control-group">
                     <label for="status" class="required">{{ __('admin::app.customers.customers.status') }}</label>
@@ -103,7 +103,7 @@
                     <span class="control-error" v-if="errors.has('status')">@{{ errors.first('status') }}</span>
                 </div>
 
-                {!! view_render_event('bagisto.admin.customer.edit.status.after', ['customer' => $customer]) !!}
+                {!! view_render_event('module.admin.customer.edit.status.after', ['customer' => $customer]) !!}
 
                 <div class="control-group">
                     <label for="isSuspended" class="required">{{ __('admin::app.customers.customers.suspend') }}</label>
@@ -121,7 +121,7 @@
                     <span class="control-error" v-if="errors.has('is_suspended')">@{{ errors.first('is_suspended') }}</span>
                 </div>
 
-                {!! view_render_event('bagisto.admin.customer.edit.is_suspended.after', ['customer' => $customer]) !!}
+                {!! view_render_event('module.admin.customer.edit.is_suspended.after', ['customer' => $customer]) !!}
 
                 <div class="control-group date" :class="[errors.has('date_of_birth') ? 'has-error' : '']">
                     <label for="dob">{{ __('admin::app.customers.customers.date_of_birth') }}</label>
@@ -139,7 +139,7 @@
                     <span class="control-error" v-if="errors.has('date_of_birth')">@{{ errors.first('date_of_birth') }}</span>
                 </div>
 
-                {!! view_render_event('bagisto.admin.customer.edit.date_of_birth.after', ['customer' => $customer]) !!}
+                {!! view_render_event('module.admin.customer.edit.date_of_birth.after', ['customer' => $customer]) !!}
 
                 <div class="control-group" :class="[errors.has('phone') ? 'has-error' : '']">
                     <label for="phone">{{ __('admin::app.customers.customers.phone') }}</label>
@@ -156,7 +156,7 @@
                     <span class="control-error" v-if="errors.has('phone')">@{{ errors.first('phone') }}</span>
                 </div>
 
-                {!! view_render_event('bagisto.admin.customer.edit.phone.after', ['customer' => $customer]) !!}
+                {!! view_render_event('module.admin.customer.edit.phone.after', ['customer' => $customer]) !!}
 
                 <div class="control-group">
                     <label for="customerGroup" >{{ __('admin::app.customers.customers.customer_group') }}</label>
@@ -176,7 +176,7 @@
                     </select>
                 </div>
 
-                {!! view_render_event('bagisto.admin.customer.edit.form.after', ['customer' => $customer]) !!}
+                {!! view_render_event('module.admin.customer.edit.form.after', ['customer' => $customer]) !!}
             </div>
 
             <button type="submit" class="btn btn-lg btn-primary">{{ __('admin::app.customers.customers.save-btn-title') }}</button>

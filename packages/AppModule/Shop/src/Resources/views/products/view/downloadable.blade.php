@@ -1,5 +1,5 @@
 @if ($product->type == 'downloadable')
-    {!! view_render_event('bagisto.shop.products.view.downloadable.before', ['product' => $product]) !!}
+    {!! view_render_event('module.shop.products.view.downloadable.before', ['product' => $product]) !!}
 
     <div class="downloadable-container">
         
@@ -49,5 +49,5 @@
         @endif
     </div>
 
-    {!! view_render_event('bagisto.shop.products.view.downloadable.before', ['product' => $product]) !!}
+    {!! view_render_event('module.shop.products.view.downloadable.before', ['product' => $product]) !!}
 @endif

@@ -11,7 +11,7 @@
         <span></span>
     </div>
 
-    {!! view_render_event('bagisto.shop.customers.account.address.edit.before', ['address' => $address]) !!}
+    {!! view_render_event('module.shop.customers.account.address.edit.before', ['address' => $address]) !!}
 
     <form method="post" action="{{ route('shop.customer.addresses.update', $address->id) }}" @submit.prevent="onSubmit">
         <div class="account-table-content mb-2">
@@ -19,7 +19,7 @@
 
             @csrf
 
-            {!! view_render_event('bagisto.shop.customers.account.address.edit_form_controls.before', ['address' => $address]) !!}
+            {!! view_render_event('module.shop.customers.account.address.edit_form_controls.before', ['address' => $address]) !!}
 
             <div class="control-group" :class="[errors.has('company_name') ? 'has-error' : '']">
                 <label for="company_name">{{ __('shop::app.customer.account.address.edit.company_name') }}</label>
@@ -38,7 +38,7 @@
                 </span>
             </div>
 
-            {!! view_render_event('bagisto.shop.customers.account.address.edit_form_controls.company_name.after') !!}
+            {!! view_render_event('module.shop.customers.account.address.edit_form_controls.company_name.after') !!}
 
             <div class="control-group" :class="[errors.has('first_name') ? 'has-error' : '']">
                 <label for="first_name" class="mandatory">{{ __('shop::app.customer.account.address.create.first_name') }}</label>
@@ -58,7 +58,7 @@
                 </span>
             </div>
 
-            {!! view_render_event('bagisto.shop.customers.account.address.edit_form_controls.first_name.after') !!}
+            {!! view_render_event('module.shop.customers.account.address.edit_form_controls.first_name.after') !!}
 
             <div class="control-group" :class="[errors.has('last_name') ? 'has-error' : '']">
                 <label for="last_name" class="mandatory">{{ __('shop::app.customer.account.address.create.last_name') }}</label>
@@ -78,7 +78,7 @@
                 </span>
             </div>
 
-            {!! view_render_event('bagisto.shop.customers.account.address.edit_form_controls.last_name.after') !!}
+            {!! view_render_event('module.shop.customers.account.address.edit_form_controls.last_name.after') !!}
 
             <div class="control-group" :class="[errors.has('vat_id') ? 'has-error' : '']">
                 <label for="vat_id">{{ __('shop::app.customer.account.address.create.vat_id') }}
@@ -100,7 +100,7 @@
                 </span>
             </div>
 
-            {!! view_render_event('bagisto.shop.customers.account.address.edit_form_controls.vat_id.after') !!}
+            {!! view_render_event('module.shop.customers.account.address.edit_form_controls.vat_id.after') !!}
 
             @php
                 $addresses = old('address1') ?? explode(PHP_EOL, $address->address1);
@@ -140,11 +140,11 @@
                 @endfor
             @endif
 
-            {!! view_render_event('bagisto.shop.customers.account.address.edit_form_controls.street-addres.after') !!}
+            {!! view_render_event('module.shop.customers.account.address.edit_form_controls.street-addres.after') !!}
 
             @include ('shop::customers.account.address.country-state', ['countryCode' => old('country') ?? $address->country, 'stateCode' => old('state') ?? $address->state])
 
-            {!! view_render_event('bagisto.shop.customers.account.address.edit_form_controls.country-state.after') !!}
+            {!! view_render_event('module.shop.customers.account.address.edit_form_controls.country-state.after') !!}
 
             <div class="control-group" :class="[errors.has('city') ? 'has-error' : '']">
                 <label for="city" class="mandatory">{{ __('shop::app.customer.account.address.create.city') }}</label>
@@ -164,7 +164,7 @@
                 </span>
             </div>
 
-            {!! view_render_event('bagisto.shop.customers.account.address.edit_form_controls.create.after') !!}
+            {!! view_render_event('module.shop.customers.account.address.edit_form_controls.create.after') !!}
 
             <div class="control-group" :class="[errors.has('postcode') ? 'has-error' : '']">
                 <label for="postcode" class="{{ core()->isPostCodeRequired() ? 'mandatory' : '' }}">{{ __('shop::app.customer.account.address.create.postcode') }}</label>
@@ -184,7 +184,7 @@
                 </span>
             </div>
 
-            {!! view_render_event('bagisto.shop.customers.account.address.edit_form_controls.postcode.after') !!}
+            {!! view_render_event('module.shop.customers.account.address.edit_form_controls.postcode.after') !!}
 
             <div class="control-group" :class="[errors.has('phone') ? 'has-error' : '']">
                 <label for="phone" class="mandatory">{{ __('shop::app.customer.account.address.create.phone') }}</label>
@@ -204,7 +204,7 @@
                 </span>
             </div>
 
-            {!! view_render_event('bagisto.shop.customers.account.address.edit_form_controls.after', ['address' => $address]) !!}
+            {!! view_render_event('module.shop.customers.account.address.edit_form_controls.after', ['address' => $address]) !!}
 
             <div class="control-group d-flex">
                 <input
@@ -227,5 +227,5 @@
         </div>
     </form>
 
-    {!! view_render_event('bagisto.shop.customers.account.address.edit.after', ['address' => $address]) !!}
+    {!! view_render_event('module.shop.customers.account.address.edit.after', ['address' => $address]) !!}
 @endsection

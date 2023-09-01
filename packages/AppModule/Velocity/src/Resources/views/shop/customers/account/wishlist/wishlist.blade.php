@@ -39,7 +39,7 @@
         @endif
     </div>
 
-    {!! view_render_event('bagisto.shop.customers.account.wishlist.list.before', ['wishlist' => $items]) !!}
+    {!! view_render_event('module.shop.customers.account.wishlist.list.before', ['wishlist' => $items]) !!}
 
     <div class="wishlist-container">
         @if ($items->count())
@@ -76,7 +76,7 @@
         </div>
     @endif
 
-    {!! view_render_event('bagisto.shop.customers.account.wishlist.list.after', ['wishlist' => $items]) !!}
+    {!! view_render_event('module.shop.customers.account.wishlist.list.after', ['wishlist' => $items]) !!}
 @endsection
 
 @push('scripts')

@@ -28,7 +28,7 @@
                 <div class="form-container">
                     @csrf()
 
-                    {!! view_render_event('bagisto.admin.settings.inventory.edit.before') !!}
+                    {!! view_render_event('module.admin.settings.inventory.edit.before') !!}
 
                     <input name="_method" type="hidden" value="PUT">
 
@@ -137,7 +137,7 @@
                         </div>
                     </accordian>
 
-                    {!! view_render_event('bagisto.admin.settings.inventory.edit.after') !!}
+                    {!! view_render_event('module.admin.settings.inventory.edit.after') !!}
                 </div>
             </div>
         </form>

@@ -23,7 +23,7 @@
 
         <p>{{ __('shop::app.checkout.success.info') }}</p>
 
-        {{ view_render_event('bagisto.shop.checkout.continue-shopping.before', ['order' => $order]) }}
+        {{ view_render_event('module.shop.checkout.continue-shopping.before', ['order' => $order]) }}
 
         <div class="misc-controls">
             <a style="display: inline-block" href="{{ route('shop.home.index') }}" class="btn btn-lg btn-primary">
@@ -31,7 +31,7 @@
             </a>
         </div>
         
-        {{ view_render_event('bagisto.shop.checkout.continue-shopping.after', ['order' => $order]) }}
+        {{ view_render_event('module.shop.checkout.continue-shopping.after', ['order' => $order]) }}
         
     </div>
 @endsection

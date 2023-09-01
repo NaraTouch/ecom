@@ -5,7 +5,7 @@
     || core()->getConfigData('customer.settings.social_login.enable_github')
 )
 @push('css')
-    <link rel="stylesheet" href="{{ bagisto_asset('css/social-login.css') }}">
+    <link rel="stylesheet" href="{{ app_asset('css/social-login.css') }}">
 @endpush
 
 <div class="social-login-links">

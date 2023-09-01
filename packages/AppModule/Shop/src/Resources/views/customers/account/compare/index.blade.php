@@ -8,7 +8,7 @@
 
 @section('account-content')
     <div class="account-layout">
-        {!! view_render_event('bagisto.shop.customers.account.comparison.list.before') !!}
+        {!! view_render_event('module.shop.customers.account.comparison.list.before') !!}
 
         <div class="account-items-list">
             <div class="account-table-content">
@@ -16,6 +16,6 @@
             </div>
         </div>
 
-        {!! view_render_event('bagisto.shop.customers.account.comparison.list.after') !!}
+        {!! view_render_event('module.shop.customers.account.comparison.list.after') !!}
     </div>
 @endsection

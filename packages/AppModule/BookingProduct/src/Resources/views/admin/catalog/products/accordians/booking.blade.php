@@ -22,7 +22,7 @@
     </style>
 @endpush
 
-{!! view_render_event('bagisto.admin.catalog.product.edit_form_accordian.booking.before', ['product' => $product]) !!}
+{!! view_render_event('module.admin.catalog.product.edit_form_accordian.booking.before', ['product' => $product]) !!}
 
 <accordian :title="'{{ __('bookingproduct::app.admin.catalog.products.booking') }}'" :active="true">
     <div slot="body">
@@ -30,7 +30,7 @@
     </div>
 </accordian>
 
-{!! view_render_event('bagisto.admin.catalog.product.edit_form_accordian.booking.after', ['product' => $product]) !!}
+{!! view_render_event('module.admin.catalog.product.edit_form_accordian.booking.after', ['product' => $product]) !!}
 
 @push('scripts')
     @php

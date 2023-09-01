@@ -13,7 +13,7 @@
     $avgRatings = ceil($reviewHelper->getAverageRating($product));
 @endphp
 
-{!! view_render_event('bagisto.shop.products.list.card.before', ['product' => $product]) !!}
+{!! view_render_event('module.shop.products.list.card.before', ['product' => $product]) !!}
     @if (! empty($list))
         <div class="col-12 lg-card-container list-card product-card row">
             <div class="product-image">
@@ -155,4 +155,4 @@
         </div>
     @endif
 
-{!! view_render_event('bagisto.shop.products.list.card.after', ['product' => $product]) !!}
+{!! view_render_event('module.shop.products.list.card.after', ['product' => $product]) !!}

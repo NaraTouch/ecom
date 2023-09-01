@@ -29,7 +29,7 @@
                     @csrf()
                     <input name="_method" type="hidden" value="PUT">
 
-                    {!! view_render_event('bagisto.admin.settings.currencies.edit.before') !!}
+                    {!! view_render_event('module.admin.settings.currencies.edit.before') !!}
 
                     <accordian title="{{ __('admin::app.settings.currencies.general') }}" :active="true">
                         <div slot="body">
@@ -59,7 +59,7 @@
                         </div>
                     </accordian>
 
-                    {!! view_render_event('bagisto.admin.settings.currencies.edit.after') !!}
+                    {!! view_render_event('module.admin.settings.currencies.edit.after') !!}
                 </div>
             </div>
         </form>

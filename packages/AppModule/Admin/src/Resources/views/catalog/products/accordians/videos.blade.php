@@ -1,8 +1,8 @@
-{!! view_render_event('bagisto.admin.catalog.product.edit_form_accordian.videos.before', ['product' => $product]) !!}
+{!! view_render_event('module.admin.catalog.product.edit_form_accordian.videos.before', ['product' => $product]) !!}
 
 <accordian title="{{ __('admin::app.catalog.products.videos') }}" :active="false">
     <div slot="body">
-        {!! view_render_event('bagisto.admin.catalog.product.edit_form_accordian.videos.controls.before', ['product' => $product]) !!}
+        {!! view_render_event('module.admin.catalog.product.edit_form_accordian.videos.controls.before', ['product' => $product]) !!}
 
         <div class="control-group {{ $errors->has('videos.files.*') ? 'has-error' : '' }}">
             <label>{{ __('admin::app.catalog.products.video') }}</label>
@@ -19,11 +19,11 @@
             <span class="control-info mt-10">{{ __('admin::app.catalog.products.video-size', ['size' => core()->getMaxUploadSize()]) }}</span>
         </div>
 
-        {!! view_render_event('bagisto.admin.catalog.product.edit_form_accordian.videos.controls.after', ['product' => $product]) !!}
+        {!! view_render_event('module.admin.catalog.product.edit_form_accordian.videos.controls.after', ['product' => $product]) !!}
     </div>
 </accordian>
 
-{!! view_render_event('bagisto.admin.catalog.product.edit_form_accordian.videos.after', ['product' => $product]) !!}
+{!! view_render_event('module.admin.catalog.product.edit_form_accordian.videos.after', ['product' => $product]) !!}
 
 @push('scripts')
     <script type="text/x-template" id="product-video-template">

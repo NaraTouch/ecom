@@ -60,7 +60,7 @@
 @section('full-content-wrapper')
 
     <div class="full-content-wrapper">
-        {!! view_render_event('bagisto.shop.home.content.before') !!}
+        {!! view_render_event('module.shop.home.content.before') !!}
 
             @if ($velocityMetaData)
                 {!! Blade::render($velocityMetaData->home_page_content) !!}
@@ -72,7 +72,7 @@
                 @include('shop::home.advertisements.advertisement-two')
             @endif
 
-        {{ view_render_event('bagisto.shop.home.content.after') }}
+        {{ view_render_event('module.shop.home.content.after') }}
     </div>
 
 @endsection

@@ -9,7 +9,7 @@
             <div class="control-group" :class="[errors.has('shipping-form.shipping_method') ? 'has-error' : '']">
 
                 @foreach ($shippingRateGroups as $rateGroup)
-                    {!! view_render_event('bagisto.shop.checkout.shipping-method.before', ['rateGroup' => $rateGroup]) !!}
+                    {!! view_render_event('module.shop.checkout.shipping-method.before', ['rateGroup' => $rateGroup]) !!}
 
                     <span class="carrier-title" id="carrier-title" style="font-size:18px; font-weight: bold;">
                         {{ $rateGroup['carrier_title'] }}
@@ -35,7 +35,7 @@
 
                     @endforeach
 
-                    {!! view_render_event('bagisto.shop.checkout.shipping-method.after', ['rateGroup' => $rateGroup]) !!}
+                    {!! view_render_event('module.shop.checkout.shipping-method.after', ['rateGroup' => $rateGroup]) !!}
 
                 @endforeach
 

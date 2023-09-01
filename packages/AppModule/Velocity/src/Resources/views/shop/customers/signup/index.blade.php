@@ -29,7 +29,7 @@
                         {{ __('velocity::app.customer.signup-form.form-signup-text')}}
                     </p>
 
-                    {!! view_render_event('bagisto.shop.customers.signup.before') !!}
+                    {!! view_render_event('module.shop.customers.signup.before') !!}
 
                     <form
                         method="post"
@@ -38,7 +38,7 @@
 
                         {{ csrf_field() }}
 
-                        {!! view_render_event('bagisto.shop.customers.signup_form_controls.before') !!}
+                        {!! view_render_event('module.shop.customers.signup_form_controls.before') !!}
 
                         <div class="control-group" :class="[errors.has('first_name') ? 'has-error' : '']">
                             <label for="first_name" class="required label-style">
@@ -56,7 +56,7 @@
                             <span class="control-error" v-if="errors.has('first_name')" v-text="errors.first('first_name')"></span>
                         </div>
 
-                        {!! view_render_event('bagisto.shop.customers.signup_form_controls.firstname.after') !!}
+                        {!! view_render_event('module.shop.customers.signup_form_controls.firstname.after') !!}
 
                         <div class="control-group" :class="[errors.has('last_name') ? 'has-error' : '']">
                             <label for="last_name" class="required label-style">
@@ -74,7 +74,7 @@
                             <span class="control-error" v-if="errors.has('last_name')" v-text="errors.first('last_name')"></span>
                         </div>
 
-                        {!! view_render_event('bagisto.shop.customers.signup_form_controls.lastname.after') !!}
+                        {!! view_render_event('module.shop.customers.signup_form_controls.lastname.after') !!}
 
                         <div class="control-group" :class="[errors.has('email') ? 'has-error' : '']">
                             <label for="email" class="required label-style">
@@ -92,7 +92,7 @@
                             <span class="control-error" v-if="errors.has('email')" v-text="errors.first('email')"></span>
                         </div>
 
-                        {!! view_render_event('bagisto.shop.customers.signup_form_controls.email.after') !!}
+                        {!! view_render_event('module.shop.customers.signup_form_controls.email.after') !!}
 
                         <div class="control-group" :class="[errors.has('password') ? 'has-error' : '']">
                             <label for="password" class="required label-style">
@@ -111,7 +111,7 @@
                             <span class="control-error" v-if="errors.has('password')" v-text="errors.first('password')"></span>
                         </div>
 
-                        {!! view_render_event('bagisto.shop.customers.signup_form_controls.password.after') !!}
+                        {!! view_render_event('module.shop.customers.signup_form_controls.password.after') !!}
 
                         <div class="control-group" :class="[errors.has('password_confirmation') ? 'has-error' : '']">
                             <label for="password_confirmation" class="required label-style">
@@ -128,7 +128,7 @@
                             <span class="control-error" v-if="errors.has('password_confirmation')" v-text="errors.first('password_confirmation')"></span>
                         </div>
 
-                        {!! view_render_event('bagisto.shop.customers.signup_form_controls.password_confirmation.after') !!}
+                        {!! view_render_event('module.shop.customers.signup_form_controls.password_confirmation.after') !!}
 
                         <div class="control-group">
 
@@ -143,14 +143,14 @@
                             </div>
                         @endif
 
-                        {!! view_render_event('bagisto.shop.customers.signup_form_controls.after') !!}
+                        {!! view_render_event('module.shop.customers.signup_form_controls.after') !!}
 
                         <button class="theme-btn" type="submit">
                             {{ __('shop::app.customer.signup-form.title') }}
                         </button>
                     </form>
 
-                    {!! view_render_event('bagisto.shop.customers.signup.after') !!}
+                    {!! view_render_event('module.shop.customers.signup.after') !!}
                 </div>
             </div>
         </div>

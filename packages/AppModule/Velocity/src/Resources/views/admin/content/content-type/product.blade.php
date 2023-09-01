@@ -1,8 +1,8 @@
-{!! view_render_event('bagisto.admin.content.create_form_accordian.content.product.before') !!}
+{!! view_render_event('module.admin.content.create_form_accordian.content.product.before') !!}
 
     <catalog-product></catalog-product>
 
-{!! view_render_event('bagisto.admin.content.create_form_accordian.content.product.after') !!}
+{!! view_render_event('module.admin.content.create_form_accordian.content.product.after') !!}
 @push('scripts')
     <script type="text/x-template" id="catalog-product-template">
         <div>

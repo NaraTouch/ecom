@@ -1,9 +1,9 @@
-{!! view_render_event('bagisto.admin.catalog.product.edit_form_accordian.inventories.before', ['product' => $product]) !!}
+{!! view_render_event('module.admin.catalog.product.edit_form_accordian.inventories.before', ['product' => $product]) !!}
 
 <accordian title="{{ __('admin::app.catalog.products.inventories') }}" :active="false">
     <div slot="body">
 
-        {!! view_render_event('bagisto.admin.catalog.product.edit_form_accordian.inventories.controls.before', ['product' => $product]) !!}
+        {!! view_render_event('module.admin.catalog.product.edit_form_accordian.inventories.controls.before', ['product' => $product]) !!}
 
         <div class="control-group">
             @php
@@ -38,9 +38,9 @@
         
         @endforeach
 
-        {!! view_render_event('bagisto.admin.catalog.product.edit_form_accordian.inventories.controls.after', ['product' => $product]) !!}
+        {!! view_render_event('module.admin.catalog.product.edit_form_accordian.inventories.controls.after', ['product' => $product]) !!}
 
     </div>
 </accordian>
 
-{!! view_render_event('bagisto.admin.catalog.product.edit_form_accordian.inventories.after', ['product' => $product]) !!}
+{!! view_render_event('module.admin.catalog.product.edit_form_accordian.inventories.after', ['product' => $product]) !!}

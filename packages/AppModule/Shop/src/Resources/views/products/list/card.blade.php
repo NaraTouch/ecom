@@ -1,4 +1,4 @@
-{!! view_render_event('bagisto.shop.products.list.card.before', ['product' => $product]) !!}
+{!! view_render_event('module.shop.products.list.card.before', ['product' => $product]) !!}
 
 <div class="product-card">
 
@@ -36,4 +36,4 @@
 
 </div>
 
-{!! view_render_event('bagisto.shop.products.list.card.after', ['product' => $product]) !!}
+{!! view_render_event('module.shop.products.list.card.after', ['product' => $product]) !!}

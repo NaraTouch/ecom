@@ -1,15 +1,10 @@
 {
     "name": "module/laravel-cart-rule",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Jitendra Singh",
-            "email": "jitendra@AppModule.com"
-        }
-    ],
+    "authors": [],
     "require": {
-        "bagisto/laravel-core": "dev-master",
-        "bagisto/laravel-rule": "dev-master"
+        "module/laravel-core": "dev-master",
+        "module/laravel-rule": "dev-master"
     },
     "autoload": {
         "psr-4": {

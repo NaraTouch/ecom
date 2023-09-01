@@ -7,7 +7,7 @@
 @section('content-wrapper')
 
 <div class="auth-content">
-    {!! view_render_event('bagisto.shop.customers.reset_password.before') !!}
+    {!! view_render_event('module.shop.customers.reset_password.before') !!}
         <div class="auth-content form-container">
             <div class="container">
                 <div class="col-lg-10 col-md-12 offset-lg-1">
@@ -19,7 +19,7 @@
 
                     <div class="body col-12">
 
-                        {!! view_render_event('bagisto.shop.customers.forget_password.before') !!}
+                        {!! view_render_event('module.shop.customers.forget_password.before') !!}
 
                         <form
                             method="POST"
@@ -30,7 +30,7 @@
 
                             <input type="hidden" name="token" value="{{ $token }}">
 
-                            {!! view_render_event('bagisto.shop.customers.forget_password_form_controls.before') !!}
+                            {!! view_render_event('module.shop.customers.forget_password_form_controls.before') !!}
 
                             <div :class="`form-group ${errors.has('email') ? 'has-error' : ''}`">
                                 <label for="email" class="required label-style mandatory">
@@ -77,7 +77,7 @@
                                 <span class="control-error" v-if="errors.has('password_confirmation')" v-text="errors.first('password_confirmation')"></span>
                             </div>
 
-                            {!! view_render_event('bagisto.shop.customers.forget_password_form_controls.after') !!}
+                            {!! view_render_event('module.shop.customers.forget_password_form_controls.after') !!}
 
                             <button class="theme-btn" type="submit">
                                 {{ __('shop::app.customer.reset-password.submit-btn-title') }}
@@ -85,11 +85,11 @@
                         </form>
 
 
-                        {!! view_render_event('bagisto.shop.customers.forget_password.after') !!}
+                        {!! view_render_event('module.shop.customers.forget_password.after') !!}
                     </div>
                 </div>
             </div>
         </div>
-    {!! view_render_event('bagisto.shop.customers.reset_password.before') !!}
+    {!! view_render_event('module.shop.customers.reset_password.before') !!}
 </div>
 @endsection

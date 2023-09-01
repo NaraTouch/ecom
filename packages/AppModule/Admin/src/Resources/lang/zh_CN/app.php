@@ -1422,7 +1422,7 @@ return [
     ],
 
     'footer' => [
-        'copy-right' => 'Powered by <a href="https://bagisto.com/" target="_blank" rel="nofollow">巴吉斯托</a>, 一个社区项目 <a href="https://AppModule.com/" target="_blank" rel="nofollow">AppModule</a>',
+        'copy-right' => 'Powered by <a href="#" target="_blank" rel="nofollow">巴吉斯托</a>, 一个社区项目 <a href="https://AppModule.com/" target="_blank" rel="nofollow">AppModule</a>',
     ],
 
     'admin' => [

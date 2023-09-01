@@ -2,12 +2,7 @@
     "name": "module/laravel-shop",
     "license": "MIT",
     "description" : "Shop package for store front and customers",
-    "authors": [
-        {
-            "name": "Bagisto",
-            "email": "support@bagisto.com"
-        }
-    ],
+    "authors": [],
     "require": {},
     "autoload": {
         "psr-4": {

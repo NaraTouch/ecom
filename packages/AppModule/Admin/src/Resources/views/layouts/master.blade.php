@@ -22,35 +22,35 @@
 
         @stack('css')
 
-        {!! view_render_event('bagisto.admin.layout.head') !!}
+        {!! view_render_event('module.admin.layout.head') !!}
     </head>
 
     <body @if (core()->getCurrentLocale() && core()->getCurrentLocale()->direction == 'rtl') class="rtl" @endif style="scroll-behavior: smooth;">
 
-        {!! view_render_event('bagisto.admin.layout.body.before') !!}
+        {!! view_render_event('module.admin.layout.body.before') !!}
 
         <div id="app">
             <flash-wrapper ref='flashes'></flash-wrapper>
 
-            {!! view_render_event('bagisto.admin.layout.nav-top.before') !!}
+            {!! view_render_event('module.admin.layout.nav-top.before') !!}
 
             @include ('admin::layouts.nav-top')
 
-            {!! view_render_event('bagisto.admin.layout.nav-top.after') !!}
+            {!! view_render_event('module.admin.layout.nav-top.after') !!}
 
-            {!! view_render_event('bagisto.admin.layout.nav-left.before') !!}
+            {!! view_render_event('module.admin.layout.nav-left.before') !!}
 
             @include ('admin::layouts.nav-left')
 
-            {!! view_render_event('bagisto.admin.layout.nav-left.after') !!}
+            {!! view_render_event('module.admin.layout.nav-left.after') !!}
 
             <div class="content-container" :class="isMenuOpen ? 'padding-container-navbar-expand' : 'padding-container-navbar-not-expand'">
 
-                {!! view_render_event('bagisto.admin.layout.content.before') !!}
+                {!! view_render_event('module.admin.layout.content.before') !!}
 
                 @yield('content-wrapper')
 
-                {!! view_render_event('bagisto.admin.layout.content.after') !!}
+                {!! view_render_event('module.admin.layout.content.after') !!}
 
             </div>
         </div>
@@ -152,7 +152,7 @@
 
         @stack('scripts')
 
-        {!! view_render_event('bagisto.admin.layout.body.after') !!}
+        {!! view_render_event('module.admin.layout.body.after') !!}
 
         <div class="modal-overlay"></div>
 

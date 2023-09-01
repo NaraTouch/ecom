@@ -1,5 +1,5 @@
 
-{!! view_render_event('bagisto.admin.content.create_form_accordian.content.link.before') !!}
+{!! view_render_event('module.admin.content.create_form_accordian.content.link.before') !!}
 
 <div class="control-group" :class="[errors.has('{!!$locale!!}[page_link]') ? 'has-error' : '']">
     <label for="page_link" class="required">
@@ -42,4 +42,4 @@
     </select>
 </div>
 
-{!! view_render_event('bagisto.admin.content.create_form_accordian.content.link.after') !!}
+{!! view_render_event('module.admin.content.create_form_accordian.content.link.after') !!}

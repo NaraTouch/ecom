@@ -2,12 +2,7 @@
     "name": "module/laravel-shipping",
     "description": "Shipping Package for Shipping Method",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "rahulshukla-AppModule",
-            "email": "rahulshukla.symfony517@AppModule.com"
-        }
-    ],
+    "authors": [],
     "require": {},
     "autoload": {
         "psr-4": {

@@ -40,7 +40,7 @@
 
 @section('content-wrapper')
 
-    {!! view_render_event('bagisto.shop.products.view.before', ['product' => $product]) !!}
+    {!! view_render_event('module.shop.products.view.before', ['product' => $product]) !!}
 
     <section class="product-detail">
 
@@ -82,16 +82,16 @@
 
                         @include ('shop::products.view.stock', ['product' => $product])
 
-                        {!! view_render_event('bagisto.shop.products.view.short_description.before', ['product' => $product]) !!}
+                        {!! view_render_event('module.shop.products.view.short_description.before', ['product' => $product]) !!}
 
                         <div class="description">
                             {!! $product->short_description !!}
                         </div>
 
-                        {!! view_render_event('bagisto.shop.products.view.short_description.after', ['product' => $product]) !!}
+                        {!! view_render_event('module.shop.products.view.short_description.after', ['product' => $product]) !!}
 
 
-                        {!! view_render_event('bagisto.shop.products.view.quantity.before', ['product' => $product]) !!}
+                        {!! view_render_event('module.shop.products.view.quantity.before', ['product' => $product]) !!}
 
                         @if ($product->getTypeInstance()->showQuantityBox())
                             <quantity-changer></quantity-changer>
@@ -99,7 +99,7 @@
                             <input type="hidden" name="quantity" value="1">
                         @endif
 
-                        {!! view_render_event('bagisto.shop.products.view.quantity.after', ['product' => $product]) !!}
+                        {!! view_render_event('module.shop.products.view.quantity.after', ['product' => $product]) !!}
 
                         @include ('shop::products.view.configurable-options')
 
@@ -109,7 +109,7 @@
 
                         @include ('shop::products.view.bundle-options')
 
-                        {!! view_render_event('bagisto.shop.products.view.description.before', ['product' => $product]) !!}
+                        {!! view_render_event('module.shop.products.view.description.before', ['product' => $product]) !!}
 
                         <accordian :title="'{{ __('shop::app.products.description') }}'" :active="true">
                             <div slot="header">
@@ -124,7 +124,7 @@
                             </div>
                         </accordian>
 
-                        {!! view_render_event('bagisto.shop.products.view.description.after', ['product' => $product]) !!}
+                        {!! view_render_event('module.shop.products.view.description.after', ['product' => $product]) !!}
 
                         @include ('shop::products.view.attributes')
 
@@ -140,7 +140,7 @@
 
     </section>
 
-    {!! view_render_event('bagisto.shop.products.view.after', ['product' => $product]) !!}
+    {!! view_render_event('module.shop.products.view.after', ['product' => $product]) !!}
 @endsection
 
 @push('scripts')

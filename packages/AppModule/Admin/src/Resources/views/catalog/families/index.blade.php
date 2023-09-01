@@ -20,13 +20,13 @@
             </div>
         </div>
 
-        {!! view_render_event('bagisto.admin.catalog.families.list.before') !!}
+        {!! view_render_event('module.admin.catalog.families.list.before') !!}
 
         <div class="page-content">
             <datagrid-plus src="{{ route('admin.catalog.families.index') }}"></datagrid-plus>
         </div>
 
-        {!! view_render_event('bagisto.admin.catalog.families.list.after') !!}
+        {!! view_render_event('module.admin.catalog.families.list.after') !!}
 
     </div>
 @stop

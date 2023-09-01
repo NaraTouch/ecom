@@ -51,7 +51,7 @@
 
                                     <div class="item-details">
 
-                                        {!! view_render_event('bagisto.shop.checkout.cart.item.name.before', ['item' => $item]) !!}
+                                        {!! view_render_event('module.shop.checkout.cart.item.name.before', ['item' => $item]) !!}
 
                                         <div class="item-title">
                                             <a href="{{ route('shop.productOrCategory.index', $url_key) }}">
@@ -59,19 +59,19 @@
                                             </a>
                                         </div>
 
-                                        {!! view_render_event('bagisto.shop.checkout.cart.item.name.after', ['item' => $item]) !!}
+                                        {!! view_render_event('module.shop.checkout.cart.item.name.after', ['item' => $item]) !!}
 
 
-                                        {!! view_render_event('bagisto.shop.checkout.cart.item.price.before', ['item' => $item]) !!}
+                                        {!! view_render_event('module.shop.checkout.cart.item.price.before', ['item' => $item]) !!}
 
                                         <div class="price">
                                             {{ core()->currency($item->base_price) }}
                                         </div>
 
-                                        {!! view_render_event('bagisto.shop.checkout.cart.item.price.after', ['item' => $item]) !!}
+                                        {!! view_render_event('module.shop.checkout.cart.item.price.after', ['item' => $item]) !!}
 
 
-                                        {!! view_render_event('bagisto.shop.checkout.cart.item.options.before', ['item' => $item]) !!}
+                                        {!! view_render_event('module.shop.checkout.cart.item.options.before', ['item' => $item]) !!}
 
                                         @if (isset($item->additional['attributes']))
                                             <div class="item-options">
@@ -83,10 +83,10 @@
                                             </div>
                                         @endif
 
-                                        {!! view_render_event('bagisto.shop.checkout.cart.item.options.after', ['item' => $item]) !!}
+                                        {!! view_render_event('module.shop.checkout.cart.item.options.after', ['item' => $item]) !!}
 
 
-                                        {!! view_render_event('bagisto.shop.checkout.cart.item.quantity.before', ['item' => $item]) !!}
+                                        {!! view_render_event('module.shop.checkout.cart.item.quantity.before', ['item' => $item]) !!}
 
                                         <div class="misc">
                                             @if ($item->product->getTypeInstance()->showQuantityBox() === true)
@@ -123,7 +123,7 @@
                                             @endauth
                                         </div>
 
-                                        {!! view_render_event('bagisto.shop.checkout.cart.item.quantity.after', ['item' => $item]) !!}
+                                        {!! view_render_event('module.shop.checkout.cart.item.quantity.after', ['item' => $item]) !!}
 
                                         @if (! cart()->isItemHaveQuantity($item))
                                             <div class="error-message mt-15">
@@ -136,7 +136,7 @@
                             @endforeach
                         </div>
 
-                        {!! view_render_event('bagisto.shop.checkout.cart.controls.after', ['cart' => $cart]) !!}
+                        {!! view_render_event('module.shop.checkout.cart.controls.after', ['cart' => $cart]) !!}
 
                         <div class="misc-controls">
                             <a href="{{ route('shop.home.index') }}" class="link">{{ __('shop::app.checkout.cart.continue-shopping') }}</a>
@@ -164,18 +164,18 @@
                             </div>
                         </div>
 
-                        {!! view_render_event('bagisto.shop.checkout.cart.controls.after', ['cart' => $cart]) !!}
+                        {!! view_render_event('module.shop.checkout.cart.controls.after', ['cart' => $cart]) !!}
                     </form>
                 </div>
 
                 <div class="right-side">
-                    {!! view_render_event('bagisto.shop.checkout.cart.summary.after', ['cart' => $cart]) !!}
+                    {!! view_render_event('module.shop.checkout.cart.summary.after', ['cart' => $cart]) !!}
 
                     @include('shop::checkout.total.summary', ['cart' => $cart])
 
                     <coupon-component></coupon-component>
 
-                    {!! view_render_event('bagisto.shop.checkout.cart.summary.after', ['cart' => $cart]) !!}
+                    {!! view_render_event('module.shop.checkout.cart.summary.after', ['cart' => $cart]) !!}
                 </div>
             </div>
 

@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'name'    => 'AppModule Bagisto Social Login',
+    'name'    => 'AppModule Social Login',
     'version' => '0.0.1',
 ];

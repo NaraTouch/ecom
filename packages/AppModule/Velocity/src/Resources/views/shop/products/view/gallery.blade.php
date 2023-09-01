@@ -28,7 +28,7 @@
     $images = array_merge($imageData, $videoData);
 @endphp
 
-{!! view_render_event('bagisto.shop.products.view.gallery.before', ['product' => $product]) !!}
+{!! view_render_event('module.shop.products.view.gallery.before', ['product' => $product]) !!}
 
 <div class="product-image-group">
     <div class="row col-12">
@@ -45,7 +45,7 @@
 
 </div>
 
-{!! view_render_event('bagisto.shop.products.view.gallery.after', ['product' => $product]) !!}
+{!! view_render_event('module.shop.products.view.gallery.after', ['product' => $product]) !!}
 
 <script type="text/x-template" id="product-gallery-template">
     <ul class="thumb-list col-12 row ltr" type="none">

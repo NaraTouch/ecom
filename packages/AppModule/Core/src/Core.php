@@ -17,11 +17,11 @@ use AppModule\Customer\Repositories\CustomerGroupRepository;
 class Core
 {
     /**
-     * The Bagisto version.
+     * The APP version.
      *
      * @var string
      */
-    const BAGISTO_VERSION = '1.x-dev';
+    const APP_VERSION = '1.x-dev';
 
     /**
      * Channel.
@@ -72,13 +72,13 @@ class Core
     }
 
     /**
-     * Get the version number of the Bagisto.
+     * Get the version number of the App.
      *
      * @return string
      */
     public function version()
     {
-        return static::BAGISTO_VERSION;
+        return static::APP_VERSION;
     }
 
     /**

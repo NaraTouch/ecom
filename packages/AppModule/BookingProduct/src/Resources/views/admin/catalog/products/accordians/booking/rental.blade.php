@@ -1,8 +1,8 @@
-{!! view_render_event('bagisto.admin.catalog.product.edit_form_accordian.booking.rental.before', ['product' => $product]) !!}
+{!! view_render_event('module.admin.catalog.product.edit_form_accordian.booking.rental.before', ['product' => $product]) !!}
 
 <rental-booking></rental-booking>
 
-{!! view_render_event('bagisto.admin.catalog.product.edit_form_accordian.booking.rental.after', ['product' => $product]) !!}
+{!! view_render_event('module.admin.catalog.product.edit_form_accordian.booking.rental.after', ['product' => $product]) !!}
 
 @push('scripts')
     <script type="text/x-template" id="rental-booking-template">

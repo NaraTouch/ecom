@@ -58,7 +58,7 @@
 @push('scripts')
     <script type="text/x-template" id="category-template">
         <section class="row col-12 velocity-divide-page category-page-wrapper">
-            {!! view_render_event('bagisto.shop.productOrCategory.index.before', ['category' => $category]) !!}
+            {!! view_render_event('module.shop.productOrCategory.index.before', ['category' => $category]) !!}
 
             @if (in_array($category->display_mode, [null, 'products_only', 'products_and_description']))
                 @include ('shop::products.list.layered-navigation')
@@ -145,11 +145,11 @@
                                 </div>
                             @endif
 
-                            {!! view_render_event('bagisto.shop.productOrCategory.index.pagination.before', ['category' => $category]) !!}
+                            {!! view_render_event('module.shop.productOrCategory.index.pagination.before', ['category' => $category]) !!}
 
                             <div class="bottom-toolbar" v-html="paginationHTML"></div>
 
-                            {!! view_render_event('bagisto.shop.productOrCategory.index.pagination.after', ['category' => $category]) !!}
+                            {!! view_render_event('module.shop.productOrCategory.index.pagination.after', ['category' => $category]) !!}
                         </template>
 
                         <div class="product-list empty" v-else>
@@ -160,7 +160,7 @@
                 @endif
             </div>
 
-            {!! view_render_event('bagisto.shop.productOrCategory.index.after', ['category' => $category]) !!}
+            {!! view_render_event('module.shop.productOrCategory.index.after', ['category' => $category]) !!}
         </section>
     </script>
 

@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'name'    => 'AppModule Bagisto Catalog Rule',
+    'name'    => 'AppModule Catalog Rule',
     'version' => '0.0.1',
 ];

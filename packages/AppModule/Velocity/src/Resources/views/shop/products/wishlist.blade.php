@@ -1,6 +1,6 @@
 @inject ('wishListHelper', 'AppModule\Customer\Helpers\Wishlist')
 
-{!! view_render_event('bagisto.shop.products.wishlist.before') !!}
+{!! view_render_event('module.shop.products.wishlist.before') !!}
 
     @auth('customer')
         @php
@@ -72,4 +72,4 @@
         </form>
     @endauth
 
-{!! view_render_event('bagisto.shop.products.wishlist.after') !!}
+{!! view_render_event('module.shop.products.wishlist.after') !!}

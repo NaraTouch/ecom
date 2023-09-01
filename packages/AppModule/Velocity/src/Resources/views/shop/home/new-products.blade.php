@@ -4,7 +4,7 @@
     $direction = core()->getCurrentLocale()->direction == 'rtl' ? 'rtl' : 'ltr';
 @endphp
 
-{!! view_render_event('bagisto.shop.new-products.before') !!}
+{!! view_render_event('module.shop.new-products.before') !!}
 
 <product-collections
     count="{{ (int) $count }}"
@@ -17,4 +17,4 @@
     no-data-text="{{ __('velocity::app.products.not-available') }}">
 </product-collections>
 
-{!! view_render_event('bagisto.shop.new-products.after') !!}
+{!! view_render_event('module.shop.new-products.after') !!}

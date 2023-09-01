@@ -12,7 +12,7 @@
 
                 @foreach ($shippingRateGroups as $rateGroup)
 
-                    {!! view_render_event('bagisto.shop.checkout.shipping-method.before', ['rateGroup' => $rateGroup]) !!}
+                    {!! view_render_event('module.shop.checkout.shipping-method.before', ['rateGroup' => $rateGroup]) !!}
                         @foreach ($rateGroup['rates'] as $rate)
                             <div class="row col-12">
                                 <div class="radio">
@@ -42,7 +42,7 @@
 
                         @endforeach
 
-                    {!! view_render_event('bagisto.shop.checkout.shipping-method.after', ['rateGroup' => $rateGroup]) !!}
+                    {!! view_render_event('module.shop.checkout.shipping-method.after', ['rateGroup' => $rateGroup]) !!}
 
                 @endforeach
 

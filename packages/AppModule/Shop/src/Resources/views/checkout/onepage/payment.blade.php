@@ -10,7 +10,7 @@
 
                 @foreach ($paymentMethods as $payment)
 
-                    {!! view_render_event('bagisto.shop.checkout.payment-method.before', ['payment' => $payment]) !!}
+                    {!! view_render_event('module.shop.checkout.payment-method.before', ['payment' => $payment]) !!}
 
                     <div class="checkout-method-group mb-20">
                         <div class="line-one">
@@ -37,7 +37,7 @@
                         @endif
                     </div>
 
-                    {!! view_render_event('bagisto.shop.checkout.payment-method.after', ['payment' => $payment]) !!}
+                    {!! view_render_event('module.shop.checkout.payment-method.after', ['payment' => $payment]) !!}
 
                 @endforeach
 

@@ -1,6 +1,6 @@
 @inject ('productViewHelper', 'AppModule\Product\Helpers\View')
 
-{!! view_render_event('bagisto.shop.products.view.attributes.before', ['product' => $product]) !!}
+{!! view_render_event('module.shop.products.view.attributes.before', ['product' => $product]) !!}
     @php
         $customAttributeValues = $productViewHelper->getAdditionalData($product);
     @endphp
@@ -53,4 +53,4 @@
         </accordian>
     @endif
 
-{!! view_render_event('bagisto.shop.products.view.attributes.after', ['product' => $product]) !!}
+{!! view_render_event('module.shop.products.view.attributes.after', ['product' => $product]) !!}

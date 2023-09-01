@@ -16,7 +16,7 @@
             <div class="horizontal-rule"></div>
         </div>
 
-        {!! view_render_event('bagisto.shop.customers.account.downloadable_products.list.before') !!}
+        {!! view_render_event('module.shop.customers.account.downloadable_products.list.before') !!}
 
         <div class="account-items-list">
             <div class="account-table-content">
@@ -26,6 +26,6 @@
             </div>
         </div>
 
-        {!! view_render_event('bagisto.shop.customers.account.downloadable_products.list.after') !!}
+        {!! view_render_event('module.shop.customers.account.downloadable_products.list.after') !!}
     </div>
 @endsection

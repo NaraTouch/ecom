@@ -27,7 +27,7 @@
     }
 @endphp
 
-{!! view_render_event('bagisto.shop.layout.header.locale.before') !!}
+{!! view_render_event('module.shop.layout.header.locale.before') !!}
     <div class="d-inline-block">
         <div class="dropdown">
             <div class="locale-icon">
@@ -65,9 +65,9 @@
         </div>
     </div>
 
-{!! view_render_event('bagisto.shop.layout.header.locale.after') !!}
+{!! view_render_event('module.shop.layout.header.locale.after') !!}
 
-{!! view_render_event('bagisto.shop.layout.header.currency-item.before') !!}
+{!! view_render_event('module.shop.layout.header.currency-item.before') !!}
 
     @if (core()->getCurrentChannel()->currencies->count() > 1)
         <div class="d-inline-block">
@@ -96,4 +96,4 @@
         </div>
     @endif
 
-{!! view_render_event('bagisto.shop.layout.header.currency-item.after') !!}
+{!! view_render_event('module.shop.layout.header.currency-item.after') !!}

@@ -20,7 +20,7 @@
                     </span>
                 </div>
                 
-                {!! view_render_event('bagisto.admin.catalog.products.create.before') !!}
+                {!! view_render_event('module.admin.catalog.products.create.before') !!}
 
                 @if (bouncer()->hasPermission('catalog.products.create'))
                     <a href="{{ route('admin.catalog.products.create') }}" class="btn btn-lg btn-primary">
@@ -28,17 +28,17 @@
                     </a>
                 @endif
 
-                {!! view_render_event('bagisto.admin.catalog.products.create.after') !!}
+                {!! view_render_event('module.admin.catalog.products.create.after') !!}
             </div>
         </div>
 
-        {!! view_render_event('bagisto.admin.catalog.products.list.before') !!}
+        {!! view_render_event('module.admin.catalog.products.list.before') !!}
 
         <div class="page-content">
             <datagrid-plus src="{{ route('admin.catalog.products.index') }}"></datagrid-plus>
         </div>
 
-        {!! view_render_event('bagisto.admin.catalog.products.list.after') !!}
+        {!! view_render_event('module.admin.catalog.products.list.after') !!}
     </div>
 
     <modal id="downloadDataGrid" :is-open="modalIds.downloadDataGrid">

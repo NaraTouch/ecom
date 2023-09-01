@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'name'    => 'AppModule Bagisto Sales',
+    'name'    => 'AppModule Sales',
     'version' => '0.0.1',
 ];

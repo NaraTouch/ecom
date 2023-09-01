@@ -13,7 +13,7 @@
             <div class="payment-methods" slot="body">
                 @foreach ($paymentMethods as $payment)
 
-                    {!! view_render_event('bagisto.shop.checkout.payment-method.before', ['payment' => $payment]) !!}
+                    {!! view_render_event('module.shop.checkout.payment-method.before', ['payment' => $payment]) !!}
 
                     <div class="row col-12">
                         <div class="radio">
@@ -52,7 +52,7 @@
                         </div>
                     </div>
 
-                    {!! view_render_event('bagisto.shop.checkout.payment-method.after', ['payment' => $payment]) !!}
+                    {!! view_render_event('module.shop.checkout.payment-method.after', ['payment' => $payment]) !!}
 
                 @endforeach
 

@@ -1,7 +1,7 @@
 @inject ('wishListHelper', 'AppModule\Customer\Helpers\Wishlist')
 
 @auth('customer')
-    {!! view_render_event('bagisto.shop.products.wishlist.before') !!}
+    {!! view_render_event('module.shop.products.wishlist.before') !!}
 
     <form id="wishlist-{{ $product->id }}" action="{{ route('shop.customer.wishlist.add', $product->id) }}" method="POST">
         @csrf
@@ -24,5 +24,5 @@
 
     </a>
 
-    {!! view_render_event('bagisto.shop.products.wishlist.after') !!}
+    {!! view_render_event('module.shop.products.wishlist.after') !!}
 @endauth

@@ -35,7 +35,7 @@
             $channelLocales = core()->getAllLocalesByRequestedChannel()['locales'];
         @endphp
 
-        {!! view_render_event('bagisto.admin.catalog.product.edit.before', ['product' => $product]) !!}
+        {!! view_render_event('module.admin.catalog.product.edit.before', ['product' => $product]) !!}
 
         <form method="POST" action="" @submit.prevent="onSubmit" enctype="multipart/form-data">
 
@@ -95,12 +95,12 @@
 
                     @if (count($customAttributes))
 
-                        {!! view_render_event('bagisto.admin.catalog.product.edit_form_accordian.' . $attributeGroup->name . '.before', ['product' => $product]) !!}
+                        {!! view_render_event('module.admin.catalog.product.edit_form_accordian.' . $attributeGroup->name . '.before', ['product' => $product]) !!}
 
                         <accordian title="{{ __($attributeGroup->name) }}"
                                    :active="{{$index == 0 ? 'true' : 'false'}}">
                             <div slot="body">
-                                {!! view_render_event('bagisto.admin.catalog.product.edit_form_accordian.' . $attributeGroup->name . '.controls.before', ['product' => $product]) !!}
+                                {!! view_render_event('module.admin.catalog.product.edit_form_accordian.' . $attributeGroup->name . '.controls.before', ['product' => $product]) !!}
 
                                 @foreach ($customAttributes as $attribute)
 
@@ -193,18 +193,18 @@
 
                                 @endif
 
-                                {!! view_render_event('bagisto.admin.catalog.product.edit_form_accordian.' . $attributeGroup->name . '.controls.after', ['product' => $product]) !!}
+                                {!! view_render_event('module.admin.catalog.product.edit_form_accordian.' . $attributeGroup->name . '.controls.after', ['product' => $product]) !!}
                             </div>
                         </accordian>
 
-                        {!! view_render_event('bagisto.admin.catalog.product.edit_form_accordian.' . $attributeGroup->name . '.after', ['product' => $product]) !!}
+                        {!! view_render_event('module.admin.catalog.product.edit_form_accordian.' . $attributeGroup->name . '.after', ['product' => $product]) !!}
 
                     @endif
 
                 @endforeach
 
                 {!! view_render_event(
-                  'bagisto.admin.catalog.product.edit_form_accordian.additional_views.before',
+                  'module.admin.catalog.product.edit_form_accordian.additional_views.before',
                    ['product' => $product])
                 !!}
                 @foreach ($product->getTypeInstance()->getAdditionalViews() as $view)
@@ -214,14 +214,14 @@
                 @endforeach
 
                 {!! view_render_event(
-                  'bagisto.admin.catalog.product.edit_form_accordian.additional_views.after',
+                  'module.admin.catalog.product.edit_form_accordian.additional_views.after',
                    ['product' => $product])
                 !!}
             </div>
 
         </form>
 
-        {!! view_render_event('bagisto.admin.catalog.product.edit.after', ['product' => $product]) !!}
+        {!! view_render_event('module.admin.catalog.product.edit.after', ['product' => $product]) !!}
     </div>
 @stop
 

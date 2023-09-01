@@ -70,7 +70,7 @@
 
         @yield('css')
 
-        {!! view_render_event('bagisto.admin.layout.head') !!}
+        {!! view_render_event('module.admin.layout.head') !!}
     </head>
     <body @if (core()->getCurrentLocale() && core()->getCurrentLocale()->direction == 'rtl') class="rtl" @endif style="scroll-behavior: smooth;">
         <div id="app" class="container">
@@ -89,11 +89,11 @@
                         @endif
                     </div>
 
-                    {!! view_render_event('bagisto.admin.layout.content.before') !!}
+                    {!! view_render_event('module.admin.layout.content.before') !!}
 
                     @yield('content')
 
-                    {!! view_render_event('bagisto.admin.layout.content.after') !!}
+                    {!! view_render_event('module.admin.layout.content.after') !!}
 
                     @if (core()->getConfigData('general.content.footer.footer_toggle'))
                         <div class="footer">
@@ -135,7 +135,7 @@
 
         @stack('javascript')
 
-        {!! view_render_event('bagisto.admin.layout.body.after') !!}
+        {!! view_render_event('module.admin.layout.body.after') !!}
 
         <div class="modal-overlay"></div>
     </body>

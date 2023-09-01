@@ -29,12 +29,12 @@
                 @csrf()
                 <input name="_method" type="hidden" value="PUT">
 
-                {!! view_render_event('bagisto.admin.category.edit_form_accordian.general.before', ['velocityCategory' => $velocityCategory]) !!}
+                {!! view_render_event('module.admin.category.edit_form_accordian.general.before', ['velocityCategory' => $velocityCategory]) !!}
 
                 <accordian :title="'{{ __('velocity::app.admin.category.tab.general') }}'" :active="true">
                     <div slot="body">
 
-                        {!! view_render_event('bagisto.admin.category.edit_form_accordian.general.content.before', ['velocityCategory' => $velocityCategory]) !!}
+                        {!! view_render_event('module.admin.category.edit_form_accordian.general.content.before', ['velocityCategory' => $velocityCategory]) !!}
 
                             <div class="control-group" :class="[errors.has('category_id') ? 'has-error' : '']">
                                 <label for="category_id" class="required">
@@ -84,12 +84,12 @@
                                 <span class="control-error" v-if="errors.has('status')" v-text="errors.first('status')"></span>
                             </div>
 
-                        {!! view_render_event('bagisto.admin.category.edit_form_accordian.general.content.after', ['velocityCategory' => $velocityCategory]) !!}
+                        {!! view_render_event('module.admin.category.edit_form_accordian.general.content.after', ['velocityCategory' => $velocityCategory]) !!}
 
                     </div>
                 </accordian>
 
-                {!! view_render_event('bagisto.admin.category.edit_form_accordian.general.after', ['velocityCategory' => $velocityCategory]) !!}
+                {!! view_render_event('module.admin.category.edit_form_accordian.general.after', ['velocityCategory' => $velocityCategory]) !!}
 
             </div>
 

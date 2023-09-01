@@ -16,7 +16,7 @@
                         @if ($logo = core()->getCurrentChannel()->logo_url)
                             <img class="logo" src="{{ $logo }}" alt="" />
                         @else
-                            <img class="logo" src="{{ bagisto_asset('images/logo.svg') }}" alt="" />
+                            <img class="logo" src="{{ app_asset('images/logo.svg') }}" alt="" />
                         @endif
                     </a>
                 </li>
@@ -55,7 +55,7 @@
 
             <ul class="right-content-menu">
 
-                {!! view_render_event('bagisto.shop.layout.header.comppare-item.before') !!}
+                {!! view_render_event('module.shop.layout.header.comppare-item.before') !!}
 
                 @php
                     $showCompare = (bool) core()->getConfigData('general.content.shop.compare_option');
@@ -63,9 +63,9 @@
                     $showWishlist = (bool) core()->getConfigData('general.content.shop.wishlist_option');
                 @endphp
 
-                {!! view_render_event('bagisto.shop.layout.header.compare-item.after') !!}
+                {!! view_render_event('module.shop.layout.header.compare-item.after') !!}
 
-                {!! view_render_event('bagisto.shop.layout.header.currency-item.before') !!}
+                {!! view_render_event('module.shop.layout.header.currency-item.before') !!}
 
                 @if (core()->getCurrentChannel()->currencies->count() > 1)
                     <li class="currency-switcher">
@@ -89,10 +89,10 @@
                     </li>
                 @endif
 
-                {!! view_render_event('bagisto.shop.layout.header.currency-item.after') !!}
+                {!! view_render_event('module.shop.layout.header.currency-item.after') !!}
 
 
-                {!! view_render_event('bagisto.shop.layout.header.account-item.before') !!}
+                {!! view_render_event('module.shop.layout.header.account-item.before') !!}
 
                 <li>
                     <span class="dropdown-toggle">
@@ -196,10 +196,10 @@
                     @endauth
                 </li>
 
-                {!! view_render_event('bagisto.shop.layout.header.account-item.after') !!}
+                {!! view_render_event('module.shop.layout.header.account-item.after') !!}
 
 
-                {!! view_render_event('bagisto.shop.layout.header.cart-item.before') !!}
+                {!! view_render_event('module.shop.layout.header.cart-item.before') !!}
 
                 <li class="cart-dropdown-container">
 
@@ -207,7 +207,7 @@
 
                 </li>
 
-                {!! view_render_event('bagisto.shop.layout.header.cart-item.after') !!}
+                {!! view_render_event('module.shop.layout.header.cart-item.after') !!}
 
             </ul>
 

@@ -3,7 +3,7 @@
     @if ($bookingProduct = app('\AppModule\BookingProduct\Repositories\BookingProductRepository')->findOneByField('product_id', $product->id))
 
         @push('css')
-            <link rel="stylesheet" href="{{ bagisto_asset('css/velocity-booking.css') }}">
+            <link rel="stylesheet" href="{{ app_asset('css/velocity-booking.css') }}">
         @endpush
 
         <accordian :title="'{{ __('bookingproduct::app.shop.products.booking-information') }}'" :active="true">

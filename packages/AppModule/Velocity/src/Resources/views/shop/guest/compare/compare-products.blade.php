@@ -22,7 +22,7 @@
                 </button>
             </div>
 
-            {!! view_render_event('bagisto.shop.customers.account.compare.view.before') !!}
+            {!! view_render_event('module.shop.customers.account.compare.view.before') !!}
 
             <table class="row compare-products">
                 <shimmer-component v-if="!isProductListLoaded && !isMobile()"></shimmer-component>
@@ -149,7 +149,7 @@
                 </span>
             </table>
 
-            {!! view_render_event('bagisto.shop.customers.account.compare.view.after') !!}
+            {!! view_render_event('module.shop.customers.account.compare.view.after') !!}
         </section>
     </script>
 

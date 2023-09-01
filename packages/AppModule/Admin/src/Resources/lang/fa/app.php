@@ -1425,7 +1425,7 @@ return [
     ],
 
     'footer' => [
-        'copy-right' => 'طراحی شده توسط <a href="https://bagisto.com/" target="_blank">Bagisto</a> ، یک پروژه عمومی توسط <a href="https://AppModule.com/" target="_blank">AppModule</a>',
+        'copy-right' => 'طراحی شده توسط <a href="#" target="_blank">App Laravel</a> ، یک پروژه عمومی توسط <a href="https://AppModule.com/" target="_blank">AppModule</a>',
     ],
 
     'admin' => [

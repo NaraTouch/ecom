@@ -1453,7 +1453,7 @@ return [
     ],
 
     'footer' => [
-        'copy-right' => 'Aangedreven door <a href="https://bagisto.com/" target="_blank">Bagisto</a>, Een gemeenschapsproject door <a href="https://AppModule.com/" target="_blank">AppModule</a>',
+        'copy-right' => 'Aangedreven door <a href="#" target="_blank">App Laravel</a>, Een gemeenschapsproject door <a href="https://AppModule.com/" target="_blank">AppModule</a>',
     ],
 
     'admin' => [

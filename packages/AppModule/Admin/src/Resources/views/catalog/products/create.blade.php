@@ -45,11 +45,11 @@
                     $familyId = request()->input('family');
                 @endphp
 
-                {!! view_render_event('bagisto.admin.catalog.product.create_form_accordian.general.before') !!}
+                {!! view_render_event('module.admin.catalog.product.create_form_accordian.general.before') !!}
 
                 <accordian title="{{ __('admin::app.catalog.products.general') }}" :active="true">
                     <div slot="body">
-                        {!! view_render_event('bagisto.admin.catalog.product.create_form_accordian.general.controls.before') !!}
+                        {!! view_render_event('module.admin.catalog.product.create_form_accordian.general.controls.before') !!}
 
                         <div class="control-group" :class="[errors.has('type') ? 'has-error' : '']">
                             <label for="type" class="required">{{ __('admin::app.catalog.products.product-type') }}</label>
@@ -94,18 +94,18 @@
                             <span class="control-error" v-if="errors.has('sku')">@{{ errors.first('sku') }}</span>
                         </div>
 
-                        {!! view_render_event('bagisto.admin.catalog.product.create_form_accordian.general.controls.after') !!}
+                        {!! view_render_event('module.admin.catalog.product.create_form_accordian.general.controls.after') !!}
                     </div>
                 </accordian>
 
-                {!! view_render_event('bagisto.admin.catalog.product.create_form_accordian.general.after') !!}
+                {!! view_render_event('module.admin.catalog.product.create_form_accordian.general.after') !!}
 
                 @if ($familyId)
-                    {!! view_render_event('bagisto.admin.catalog.product.create_form_accordian.configurable_attributes.before') !!}
+                    {!! view_render_event('module.admin.catalog.product.create_form_accordian.configurable_attributes.before') !!}
 
                     <accordian title="{{ __('admin::app.catalog.products.configurable-attributes') }}" :active="true">
                         <div slot="body">
-                            {!! view_render_event('bagisto.admin.catalog.product.create_form_accordian.configurable_attributes.controls.before') !!}
+                            {!! view_render_event('module.admin.catalog.product.create_form_accordian.configurable_attributes.controls.before') !!}
 
                             <div class="table">
                                 <table>
@@ -144,11 +144,11 @@
                                 </table>
                             </div>
 
-                            {!! view_render_event('bagisto.admin.catalog.product.create_form_accordian.configurable_attributes.controls.after') !!}
+                            {!! view_render_event('module.admin.catalog.product.create_form_accordian.configurable_attributes.controls.after') !!}
                         </div>
                     </accordian>
 
-                    {!! view_render_event('bagisto.admin.catalog.product.create_form_accordian.configurable_attributes.after') !!}
+                    {!! view_render_event('module.admin.catalog.product.create_form_accordian.configurable_attributes.after') !!}
                 @endif
             </div>
         </form>

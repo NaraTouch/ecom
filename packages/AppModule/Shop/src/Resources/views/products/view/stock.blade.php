@@ -1,4 +1,4 @@
-{!! view_render_event('bagisto.shop.products.view.stock.before', ['product' => $product]) !!}
+{!! view_render_event('module.shop.products.view.stock.before', ['product' => $product]) !!}
 
 <div class="stock-status {{! $product->haveSufficientQuantity(1) ? '' : 'active' }}">
     @if ( $product->haveSufficientQuantity(1) === true )
@@ -10,4 +10,4 @@
     @endif
 </div>
 
-{!! view_render_event('bagisto.shop.products.view.stock.after', ['product' => $product]) !!}
+{!! view_render_event('module.shop.products.view.stock.after', ['product' => $product]) !!}

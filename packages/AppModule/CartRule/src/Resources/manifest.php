@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'name'    => 'AppModule Bagisto Cart Rule',
+    'name'    => 'AppModule Cart Rule',
     'version' => '0.0.1',
 ];

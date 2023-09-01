@@ -2,10 +2,10 @@
 
 /*
 |--------------------------------------------------------------------------
-| Checking For Bagisto's Installation
+| Checking For Installation
 |--------------------------------------------------------------------------
 |
-| Checking for Bagisto's installation. If installation is done then move to
+| Checking for installation. If installation is done then move to
 | Laravel portion.
 |
 */

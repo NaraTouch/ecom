@@ -2,12 +2,7 @@
     "name": "module/laravel-customer",
     "description": "Customers Package for themeing and various features for customers",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Bagisto",
-            "email": "support@bagisto.com"
-        }
-    ],
+    "authors": [],
     "require": {},
     "autoload": {
         "psr-4": {

@@ -15,8 +15,8 @@ class EventServiceProvider extends ServiceProvider
     public function boot()
     {
         Event::listen([
-            'bagisto.admin.catalog.category.edit_form_accordian.description_images.controls.after',
-            'bagisto.admin.catalog.category.create_form_accordian.description_images.controls.after',
+            'module.admin.catalog.category.edit_form_accordian.description_images.controls.after',
+            'module.admin.catalog.category.create_form_accordian.description_images.controls.after',
         ], function($viewRenderEventManager) {
                 $viewRenderEventManager->addTemplate(
                     'velocity::admin.catelog.categories.category-icon'
@@ -25,8 +25,8 @@ class EventServiceProvider extends ServiceProvider
         );
 
         Event::listen([
-            'bagisto.admin.settings.slider.edit.after',
-            'bagisto.admin.settings.slider.create.after',
+            'module.admin.settings.slider.edit.after',
+            'module.admin.settings.slider.create.after',
         ], function($viewRenderEventManager) {
                 $viewRenderEventManager->addTemplate(
                     'velocity::admin.settings.sliders.velocity-slider'
@@ -34,7 +34,7 @@ class EventServiceProvider extends ServiceProvider
             }
         );
 
-        Event::listen('bagisto.admin.layout.head', function($viewRenderEventManager) {
+        Event::listen('module.admin.layout.head', function($viewRenderEventManager) {
             $viewRenderEventManager->addTemplate('velocity::admin.layouts.style');
         });
 

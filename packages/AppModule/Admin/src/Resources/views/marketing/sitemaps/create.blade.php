@@ -28,7 +28,7 @@
                 <div class="form-container">
                     @csrf()
 
-                    {!! view_render_event('bagisto.admin.marketing.sitemaps.create.before') !!}
+                    {!! view_render_event('module.admin.marketing.sitemaps.create.before') !!}
 
                     <accordian title="{{ __('admin::app.marketing.sitemaps.general') }}" :active="true">
                         <div slot="body">
@@ -49,7 +49,7 @@
                         </div>
                     </accordian>
 
-                    {!! view_render_event('bagisto.admin.marketing.sitemaps.create.after') !!}
+                    {!! view_render_event('module.admin.marketing.sitemaps.create.after') !!}
 
                 </div>
             </div>

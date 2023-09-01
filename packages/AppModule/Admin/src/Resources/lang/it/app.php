@@ -1447,7 +1447,7 @@ return [
     ],
 
     'footer' => [
-        'copy-right' => 'Realizzato con <a href="https://bagisto.com/" target="_blank">Bagisto</a>, Un Community Project di <a href="https://AppModule.com/" target="_blank">AppModule</a>',
+        'copy-right' => 'Realizzato con <a href="#" target="_blank">App Laravel</a>, Un Community Project di <a href="https://AppModule.com/" target="_blank">AppModule</a>',
     ],
 
     'admin' => [

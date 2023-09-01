@@ -1,6 +1,6 @@
 @inject ('toolbarHelper', 'AppModule\Product\Helpers\Toolbar')
 
-{!! view_render_event('bagisto.shop.products.list.toolbar.before') !!}
+{!! view_render_event('module.shop.products.list.toolbar.before') !!}
 
 <div class="top-toolbar mb-35">
 
@@ -75,7 +75,7 @@
 
 </div>
 
-{!! view_render_event('bagisto.shop.products.list.toolbar.after') !!}
+{!! view_render_event('module.shop.products.list.toolbar.after') !!}
 
 
 <div class="responsive-layred-filter mb-20">

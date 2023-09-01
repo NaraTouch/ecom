@@ -50,12 +50,12 @@
 
                 <input type="hidden" name="locale" value="{{ $locale }}"/>
 
-                {!! view_render_event('bagisto.admin.content.edit_form_accordian.page.before', ['content' => $content]) !!}
+                {!! view_render_event('module.admin.content.edit_form_accordian.page.before', ['content' => $content]) !!}
 
                 <accordian :title="'{{ __('velocity::app.admin.contents.tab.page') }}'" :active="true">
                     <div slot="body">
 
-                        {!! view_render_event('bagisto.admin.content.edit_form_accordian.page.controls.before', ['content' => $content]) !!}
+                        {!! view_render_event('module.admin.content.edit_form_accordian.page.controls.before', ['content' => $content]) !!}
 
                         <div class="control-group" :class="[errors.has('{{$locale}}[title]') ? 'has-error' : '']">
                             <label for="title" class="required">
@@ -88,28 +88,28 @@
                             <span class="control-error" v-if="errors.has('status')" v-text="errors.first('status')"></span>
                         </div>
 
-                        {!! view_render_event('bagisto.admin.content.edit_form_accordian.page.controls.after', ['content' => $content]) !!}
+                        {!! view_render_event('module.admin.content.edit_form_accordian.page.controls.after', ['content' => $content]) !!}
 
                     </div>
                 </accordian>
 
-                {!! view_render_event('bagisto.admin.content.edit_form_accordian.page.after', ['content' => $content]) !!}
+                {!! view_render_event('module.admin.content.edit_form_accordian.page.after', ['content' => $content]) !!}
 
-                {!! view_render_event('bagisto.admin.content.edit_form_accordian.content.before', ['content' => $content]) !!}
+                {!! view_render_event('module.admin.content.edit_form_accordian.content.before', ['content' => $content]) !!}
 
                 <accordian :title="'{{ __('velocity::app.admin.contents.tab.content') }}'" :active="true">
                     <div slot="body">
 
-                        {!! view_render_event('bagisto.admin.content.edit_form_accordian.content.controls.before', ['content' => $content]) !!}
+                        {!! view_render_event('module.admin.content.edit_form_accordian.content.controls.before', ['content' => $content]) !!}
 
                             <content-type></content-type>
 
-                        {!! view_render_event('bagisto.admin.content.edit_form_accordian.content.controls.after', ['content' => $content]) !!}
+                        {!! view_render_event('module.admin.content.edit_form_accordian.content.controls.after', ['content' => $content]) !!}
 
                     </div>
                 </accordian>
 
-                {!! view_render_event('bagisto.admin.content.edit_form_accordian.content.after', ['content' => $content]) !!}
+                {!! view_render_event('module.admin.content.edit_form_accordian.content.after', ['content' => $content]) !!}
 
             </div>
 
@@ -206,7 +206,7 @@
             </div>
 
             <div v-if="content_type == 'link'">
-                {!! view_render_event('bagisto.admin.content.edit_form_accordian.content.link.before', ['content' => $content]) !!}
+                {!! view_render_event('module.admin.content.edit_form_accordian.content.link.before', ['content' => $content]) !!}
 
                 <div :class="`control-group ${errors.has('{{$locale}}[page_link]') ? 'has-error' : ''}`">
 
@@ -248,7 +248,7 @@
                     </select>
                 </div>
 
-                {!! view_render_event('bagisto.admin.content.edit_form_accordian.content.link.after', ['content' => $content]) !!}
+                {!! view_render_event('module.admin.content.edit_form_accordian.content.link.after', ['content' => $content]) !!}
             </div>
 
             <div v-else-if="content_type == 'product'">
@@ -256,7 +256,7 @@
             </div>
 
             <div v-else-if="content_type == 'static'">
-                {!! view_render_event('bagisto.admin.content.edit_form_accordian.content.static.before', ['content' => $content]) !!}
+                {!! view_render_event('module.admin.content.edit_form_accordian.content.static.before', ['content' => $content]) !!}
 
                 <div :class="`control-group ${errors.has('{{$locale}}[description]') ? 'has-error' : ''}`">
                     <label for="description" class="required">{{ __('velocity::app.admin.contents.content.static-description') }}</label>
@@ -277,7 +277,7 @@
                     </span>
                 </div>
 
-                {!! view_render_event('bagisto.admin.content.edit_form_accordian.content.static.after', ['content' => $content]) !!}
+                {!! view_render_event('module.admin.content.edit_form_accordian.content.static.after', ['content' => $content]) !!}
             </div>
 
             <div v-else-if="content_type == 'category'">

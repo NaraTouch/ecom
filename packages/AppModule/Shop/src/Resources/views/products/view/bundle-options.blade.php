@@ -1,10 +1,10 @@
 @if ($product->type == 'bundle')
 
-    {!! view_render_event('bagisto.shop.products.view.bundle-options.before', ['product' => $product]) !!}
+    {!! view_render_event('module.shop.products.view.bundle-options.before', ['product' => $product]) !!}
 
     <bundle-option-list></bundle-option-list>
 
-    {!! view_render_event('bagisto.shop.products.view.bundle-options.after', ['product' => $product]) !!}
+    {!! view_render_event('module.shop.products.view.bundle-options.after', ['product' => $product]) !!}
 
     @push('scripts')
         <script type="text/x-template" id="bundle-option-list-template">

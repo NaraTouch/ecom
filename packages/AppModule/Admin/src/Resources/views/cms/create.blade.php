@@ -29,7 +29,7 @@
                 <div class="form-container">
                     @csrf()
 
-                    {!! view_render_event('bagisto.admin.cms.pages.create_form_accordian.general.before') !!}
+                    {!! view_render_event('module.admin.cms.pages.create_form_accordian.general.before') !!}
 
                     <accordian title="{{ __('admin::app.cms.pages.general') }}" :active="true">
                         <div slot="body">
@@ -65,9 +65,9 @@
                         </div>
                     </accordian>
 
-                    {!! view_render_event('bagisto.admin.cms.pages.create_form_accordian.general.after') !!}
+                    {!! view_render_event('module.admin.cms.pages.create_form_accordian.general.after') !!}
 
-                    {!! view_render_event('bagisto.admin.cms.pages.create_form_accordian.seo.before') !!}
+                    {!! view_render_event('module.admin.cms.pages.create_form_accordian.seo.before') !!}
 
                     <accordian title="{{ __('admin::app.cms.pages.seo') }}" :active="true">
                         <div slot="body">
@@ -100,7 +100,7 @@
                         </div>
                     </accordian>
 
-                    {!! view_render_event('bagisto.admin.cms.pages.create_form_accordian.seo.after') !!}
+                    {!! view_render_event('module.admin.cms.pages.create_form_accordian.seo.after') !!}
                 </div>
             </div>
         </form>

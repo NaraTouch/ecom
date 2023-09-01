@@ -29,7 +29,7 @@ class EventServiceProvider extends ServiceProvider
     {
         parent::boot();
 
-        Event::listen('bagisto.shop.products.view.short_description.after', static function(ViewRenderEventManager $viewRenderEventManager) {
+        Event::listen('module.shop.products.view.short_description.after', static function(ViewRenderEventManager $viewRenderEventManager) {
             if (View::exists('bookingproduct::shop.' . core()->getCurrentChannel()->theme . '.products.view.booking')) {
                 $viewRenderEventManager->addTemplate('bookingproduct::shop.' . core()->getCurrentChannel()->theme . '.products.view.booking');
             }

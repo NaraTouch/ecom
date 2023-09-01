@@ -77,7 +77,7 @@
 @endpush
 
 @section('full-content-wrapper')
-    {!! view_render_event('bagisto.shop.products.view.before', ['product' => $product]) !!}
+    {!! view_render_event('module.shop.products.view.before', ['product' => $product]) !!}
 
     <div class="row no-margin">
         <section class="col-12 product-detail">
@@ -143,7 +143,7 @@
 
                                     @include ('shop::products.view.configurable-options')
 
-                                    {!! view_render_event('bagisto.shop.products.view.quantity.before', ['product' => $product]) !!}
+                                    {!! view_render_event('module.shop.products.view.quantity.before', ['product' => $product]) !!}
 
                                     @if ($product->getTypeInstance()->showQuantityBox())
                                         <div class="col-12">
@@ -153,7 +153,7 @@
                                         <input type="hidden" name="quantity" value="1">
                                     @endif
 
-                                    {!! view_render_event('bagisto.shop.products.view.quantity.after', ['product' => $product]) !!}
+                                    {!! view_render_event('module.shop.products.view.quantity.after', ['product' => $product]) !!}
 
                                     @include ('shop::products.view.downloadable')
 
@@ -202,7 +202,7 @@
         </div>
     </div>
 
-    {!! view_render_event('bagisto.shop.products.view.after', ['product' => $product]) !!}
+    {!! view_render_event('module.shop.products.view.after', ['product' => $product]) !!}
 @endsection
 
 @push('scripts')

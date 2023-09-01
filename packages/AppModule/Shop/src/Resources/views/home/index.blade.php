@@ -38,7 +38,7 @@
 @endsection
 
 @section('content-wrapper')
-    {!! view_render_event('bagisto.shop.home.content.before') !!}
+    {!! view_render_event('module.shop.home.content.before') !!}
 
     @if (! is_null($channel->home_page_content))
         {!! Blade::render($channel->home_page_content) !!}
@@ -48,6 +48,6 @@
         @include('shop::home.new-products')
     @endif
 
-    {{ view_render_event('bagisto.shop.home.content.after') }}
+    {{ view_render_event('module.shop.home.content.after') }}
 
 @endsection

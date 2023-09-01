@@ -13,7 +13,7 @@ class Install extends Command
      *
      * @var string
      */
-    protected $signature = 'bagisto:install';
+    protected $signature = 'app:install';
 
     /**
      * The console command description.
@@ -33,7 +33,7 @@ class Install extends Command
     }
 
     /**
-     * Install and configure bagisto.
+     * Install and configure App.
      */
     public function handle()
     {
@@ -49,13 +49,13 @@ class Install extends Command
         $this->info($migrate);
 
         // running `php artisan db:seed`
-        $this->warn('Step: Seeding basic data for Bagisto kickstart...');
+        $this->warn('Step: Seeding basic data for App kickstart...');
         $result = $this->call('db:seed');
         $this->info($result);
 
-        // running `php artisan bagisto:publish --force`
+        // running `php artisan App:publish --force`
         $this->warn('Step: Publishing assets and configurations...');
-        $result = $this->call('bagisto:publish', ['--force' => true]);
+        $result = $this->call('app:publish', ['--force' => true]);
         $this->info($result);
 
         // running `php artisan storage:link`
@@ -85,7 +85,7 @@ class Install extends Command
         // final information
         $this->info('-----------------------------');
         $this->info('Congratulations!');
-        $this->info('The installation has been finished and you can now use Bagisto.');
+        $this->info('The installation has been finished and you can now use App.');
         $this->info('Go to '. url(config('app.admin_url')) .' and authenticate with:');
         $this->info('Email: admin@example.com');
         $this->info('Password: admin123');
@@ -148,7 +148,7 @@ class Install extends Command
      */
     protected function addDatabaseDetails()
     {
-        $dbName = $this->ask('What is the database name to be used by bagisto?');
+        $dbName = $this->ask('What is the database name to be used by App?');
         $this->envUpdate('DB_DATABASE=', $dbName);
 
         $dbUser = $this->anticipate('What is your database username?', ['root']);

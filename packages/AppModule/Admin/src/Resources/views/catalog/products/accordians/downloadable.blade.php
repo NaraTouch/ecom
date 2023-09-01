@@ -1,8 +1,8 @@
-{!! view_render_event('bagisto.admin.catalog.product.edit_form_accordian.downloadable.before', ['product' => $product]) !!}
+{!! view_render_event('module.admin.catalog.product.edit_form_accordian.downloadable.before', ['product' => $product]) !!}
 
 <accordian title="{{ __('admin::app.catalog.products.downloadable') }}" :active="true">
     <div slot="body">
-        {!! view_render_event('bagisto.admin.catalog.product.edit_form_accordian.downloadable.links.controls.before', ['product' => $product]) !!}
+        {!! view_render_event('module.admin.catalog.product.edit_form_accordian.downloadable.links.controls.before', ['product' => $product]) !!}
 
         <div id="downloadable-link-list-section" class="section">
             <div class="secton-title">
@@ -14,9 +14,9 @@
             </div>
         </div>
 
-        {!! view_render_event('bagisto.admin.catalog.product.edit_form_accordian.downloadable.links.controls.after', ['product' => $product]) !!}
+        {!! view_render_event('module.admin.catalog.product.edit_form_accordian.downloadable.links.controls.after', ['product' => $product]) !!}
 
-        {!! view_render_event('bagisto.admin.catalog.product.edit_form_accordian.downloadable.samples.controls.before', ['product' => $product]) !!}
+        {!! view_render_event('module.admin.catalog.product.edit_form_accordian.downloadable.samples.controls.before', ['product' => $product]) !!}
 
         <div id="downloadable-sample-list-section" class="section">
             <div class="secton-title">
@@ -28,11 +28,11 @@
             </div>
         </div>
 
-        {!! view_render_event('bagisto.admin.catalog.product.edit_form_accordian.downloadable.samples.controls.after', ['product' => $product]) !!}
+        {!! view_render_event('module.admin.catalog.product.edit_form_accordian.downloadable.samples.controls.after', ['product' => $product]) !!}
     </div>
 </accordian>
 
-{!! view_render_event('bagisto.admin.catalog.product.edit_form_accordian.downloadable.after', ['product' => $product]) !!}
+{!! view_render_event('module.admin.catalog.product.edit_form_accordian.downloadable.after', ['product' => $product]) !!}
 
 @push('scripts')
     <script type="text/x-template" id="downloadable-link-list-template">

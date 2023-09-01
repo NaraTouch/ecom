@@ -38,7 +38,7 @@ class SmartButton extends Paypal
      *
      * @var string
      */
-    protected $paypalPartnerAttributionId = 'Bagisto_Cart';
+    protected $paypalPartnerAttributionId = 'App_Cart';
 
     /**
      * Constructor.

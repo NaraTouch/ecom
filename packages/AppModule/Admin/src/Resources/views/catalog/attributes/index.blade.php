@@ -23,12 +23,12 @@
             </div>
         </div>
 
-        {!! view_render_event('bagisto.admin.catalog.attributes.list.before') !!}
+        {!! view_render_event('module.admin.catalog.attributes.list.before') !!}
 
         <div class="page-content">
             <datagrid-plus src="{{ route('admin.catalog.attributes.index') }}"></datagrid-plus>
         </div>
 
-        {!! view_render_event('bagisto.admin.catalog.attributes.list.after') !!}
+        {!! view_render_event('module.admin.catalog.attributes.list.after') !!}
     </div>
 @stop

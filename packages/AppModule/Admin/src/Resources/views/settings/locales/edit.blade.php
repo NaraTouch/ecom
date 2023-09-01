@@ -27,7 +27,7 @@
                 <div class="form-container">
                     @csrf()
 
-                    {!! view_render_event('bagisto.admin.settings.locale.edit.before', ['locale' => $locale]) !!}
+                    {!! view_render_event('module.admin.settings.locale.edit.before', ['locale' => $locale]) !!}
 
                     <input name="_method" type="hidden" value="PUT">
 
@@ -89,7 +89,7 @@
                         </div>
                     </accordian>
 
-                    {!! view_render_event('bagisto.admin.settings.locale.edit.after', ['locale' => $locale]) !!}
+                    {!! view_render_event('module.admin.settings.locale.edit.after', ['locale' => $locale]) !!}
                 </div>
             </div>
         </form>

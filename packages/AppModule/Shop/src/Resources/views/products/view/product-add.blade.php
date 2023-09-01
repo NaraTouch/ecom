@@ -1,4 +1,4 @@
-{!! view_render_event('bagisto.shop.products.view.product-add.before', ['product' => $product]) !!}
+{!! view_render_event('module.shop.products.view.product-add.before', ['product' => $product]) !!}
 
 <div class="add-to-buttons">
     @include ('shop::products.add-to-cart', ['product' => $product])
@@ -8,4 +8,4 @@
     @endif
 </div>
 
-{!! view_render_event('bagisto.shop.products.view.product-add.after', ['product' => $product]) !!}
+{!! view_render_event('module.shop.products.view.product-add.after', ['product' => $product]) !!}

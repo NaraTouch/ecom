@@ -28,12 +28,12 @@
             <div class="page-content">
                 @csrf()
 
-                {!! view_render_event('bagisto.admin.category.create_form_accordian.general.before') !!}
+                {!! view_render_event('module.admin.category.create_form_accordian.general.before') !!}
 
                 <accordian :title="'{{ __('velocity::app.admin.category.tab.general') }}'" :active="true">
                     <div slot="body">
 
-                        {!! view_render_event('bagisto.admin.category.create_form_accordian.general.content.before') !!}
+                        {!! view_render_event('module.admin.category.create_form_accordian.general.content.before') !!}
 
                             <div class="control-group" :class="[errors.has('category_id') ? 'has-error' : '']">
                                 <label for="category_id" class="required">
@@ -83,12 +83,12 @@
                                 <span class="control-error" v-if="errors.has('status')" v-text="errors.first('status')"></span>
                             </div>
 
-                        {!! view_render_event('bagisto.admin.category.create_form_accordian.general.content.after') !!}
+                        {!! view_render_event('module.admin.category.create_form_accordian.general.content.after') !!}
 
                     </div>
                 </accordian>
 
-                {!! view_render_event('bagisto.admin.category.create_form_accordian.general.after') !!}
+                {!! view_render_event('module.admin.category.create_form_accordian.general.after') !!}
 
             </div>
 

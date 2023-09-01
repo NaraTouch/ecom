@@ -105,35 +105,35 @@
 
                         <div class="col-10 no-padding fs16">
 
-                            {!! view_render_event('bagisto.shop.checkout.name.before', ['item' => $item]) !!}
+                            {!! view_render_event('module.shop.checkout.name.before', ['item' => $item]) !!}
 
                                 <div class="row fs20">
                                     <span class="col-12 link-color fw6">{{ $item->product->name }}</span>
                                 </div>
 
-                            {!! view_render_event('bagisto.shop.checkout.name.after', ['item' => $item]) !!}
+                            {!! view_render_event('module.shop.checkout.name.after', ['item' => $item]) !!}
 
                             <div class="row col-12">
-                                {!! view_render_event('bagisto.shop.checkout.price.before', ['item' => $item]) !!}
+                                {!! view_render_event('module.shop.checkout.price.before', ['item' => $item]) !!}
                                         <span class="value">
                                             {{ core()->currency($item->base_price) }}
                                         </span>
-                                {!! view_render_event('bagisto.shop.checkout.price.after', ['item' => $item]) !!}
+                                {!! view_render_event('module.shop.checkout.price.after', ['item' => $item]) !!}
 
                                 <i class="rango-close text-down-4"></i>
 
-                                {!! view_render_event('bagisto.shop.checkout.quantity.before', ['item' => $item]) !!}
+                                {!! view_render_event('module.shop.checkout.quantity.before', ['item' => $item]) !!}
                                     <span class="value">
                                         {{ $item->quantity }} ({{ __('shop::app.checkout.onepage.quantity') }})
                                     </span>
-                                {!! view_render_event('bagisto.shop.checkout.quantity.after', ['item' => $item]) !!}
+                                {!! view_render_event('module.shop.checkout.quantity.after', ['item' => $item]) !!}
                             </div>
 
                             <div class="row col-12">
                                 <b>{{ core()->currency($item->base_total) }}</b>
                             </div>
 
-                            {!! view_render_event('bagisto.shop.checkout.options.before', ['item' => $item]) !!}
+                            {!! view_render_event('module.shop.checkout.options.before', ['item' => $item]) !!}
 
                                 @if (isset($item->additional['attributes']))
                                     <div class="item-options">
@@ -145,7 +145,7 @@
                                     </div>
                                 @endif
 
-                            {!! view_render_event('bagisto.shop.checkout.options.after', ['item' => $item]) !!}
+                            {!! view_render_event('module.shop.checkout.options.after', ['item' => $item]) !!}
                         </div>
                     </div>
                 @endforeach

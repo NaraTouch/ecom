@@ -20,7 +20,7 @@
     @inject ('productRepository', 'AppModule\Product\Repositories\ProductRepository')
 
     <div class="main">
-        {!! view_render_event('bagisto.shop.products.index.before', ['category' => $category]) !!}
+        {!! view_render_event('module.shop.products.index.before', ['category' => $category]) !!}
 
         <div class="category-container">
 
@@ -70,13 +70,13 @@
                             </div>
                         @endif
 
-                        {!! view_render_event('bagisto.shop.products.index.pagination.before', ['category' => $category]) !!}
+                        {!! view_render_event('module.shop.products.index.pagination.before', ['category' => $category]) !!}
 
                         <div class="bottom-toolbar">
                             {{ $products->appends(request()->input())->links() }}
                         </div>
 
-                        {!! view_render_event('bagisto.shop.products.index.pagination.after', ['category' => $category]) !!}
+                        {!! view_render_event('module.shop.products.index.pagination.after', ['category' => $category]) !!}
 
                     @else
 
@@ -93,7 +93,7 @@
             </div>
         </div>
 
-        {!! view_render_event('bagisto.shop.products.index.after', ['category' => $category]) !!}
+        {!! view_render_event('module.shop.products.index.after', ['category' => $category]) !!}
     </div>
 @stop
 

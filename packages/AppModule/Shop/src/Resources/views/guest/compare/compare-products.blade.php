@@ -22,7 +22,7 @@
                 {{ __('shop::app.customer.account.wishlist.deleteall') }}
             </button>
 
-            {!! view_render_event('bagisto.shop.customers.account.compare.view.before') !!}
+            {!! view_render_event('module.shop.customers.account.compare.view.before') !!}
 
             <table class="compare-products">
                 <template v-if="isProductListLoaded && products.length > 0">
@@ -151,7 +151,7 @@
                 </span>
             </table>
 
-            {!! view_render_event('bagisto.shop.customers.account.compare.view.after') !!}
+            {!! view_render_event('module.shop.customers.account.compare.view.after') !!}
         </section>
     </script>
 

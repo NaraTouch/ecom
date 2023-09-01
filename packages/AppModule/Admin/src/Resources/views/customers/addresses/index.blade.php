@@ -24,12 +24,12 @@
             </div>
         </div>
 
-        {!! view_render_event('bagisto.admin.customer.addresses.list.before') !!}
+        {!! view_render_event('module.admin.customer.addresses.list.before') !!}
 
         <div class="page-content">
             <datagrid-plus src="{{ route('admin.customer.addresses.index', $customer->id) }}"></datagrid-plus>
         </div>
 
-        {!! view_render_event('bagisto.admin.customer.addresses.list.after') !!}
+        {!! view_render_event('module.admin.customer.addresses.list.after') !!}
     </div>
 @stop

@@ -16,7 +16,7 @@ $locale = core()->getRequestedLocaleCode();
             </div>
 
             <div class="page-action">
-                {!! view_render_event('bagisto.admin.catalog.categories.create.before') !!}
+                {!! view_render_event('module.admin.catalog.categories.create.before') !!}
                 
                 @if (bouncer()->hasPermission('catalog.categories.create'))
                     <a
@@ -27,17 +27,17 @@ $locale = core()->getRequestedLocaleCode();
                     </a>
                 @endif
 
-                {!! view_render_event('bagisto.admin.catalog.categories.create.after') !!}
+                {!! view_render_event('module.admin.catalog.categories.create.after') !!}
             </div>
         </div>
 
-        {!! view_render_event('bagisto.admin.catalog.categories.list.before') !!}
+        {!! view_render_event('module.admin.catalog.categories.list.before') !!}
 
         <div class="page-content">
             <datagrid-plus src="{{ route('admin.catalog.categories.index') }}"></datagrid-plus>
         </div>
 
-        {!! view_render_event('bagisto.admin.catalog.categories.list.after') !!}
+        {!! view_render_event('module.admin.catalog.categories.list.after') !!}
     </div>
 @stop
 
